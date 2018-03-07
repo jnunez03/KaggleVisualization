@@ -63,6 +63,21 @@ df["Base Salary"] = df["Base Salary"].astype(int)
 df["Regular Gross Paid"] = df["Regular Gross Paid"].astype(float)
 df["Total OT Paid"] = df["Total OT Paid"].astype(float)
 df["Total Other Pay"] = df["Total Other Pay"].astype(float)
+df["Title Description"] = df["Title Description"].astype(str)
+df["Title Description"] = df["Title Description"].str.strip()
+
+df["Title Description"]= df["Title Description"].str.replace('[^A-Za-z\s]+', '')
+
+'TEACHER' in df["Title Description"] # Doesn't seem to read the string.
+#"CHIEF ACTUARY" in df["Title Description"]
+               
+
+# Most Pay Based On Work Title   - -  - -  -  - -  - -                
+x = df[(df["Pay Basis"] == "per Annum") & (df["Regular Gross Paid"] > 14000) & (df["Base Salary"] > 14000)]
+x.groupby(["Fiscal Year","Title Description"])["Base Salary"].mean().sort_values(ascending=False)[:15]
+x.groupby(["Fiscal Year","Title Description"])["Regular Gross Paid"].mean().sort_values(ascending=False)[:15]
+#"CHIEF ACTUARY" in df["Title Description"]
+
 
 df.info() # Success
 
