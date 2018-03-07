@@ -70,10 +70,7 @@ df.info() # Success
 # df["Agency Start Date"] = df["Agency Start Date"].str.replace('/','-')
 # df["Agency Start Date"] = pd.to_datetime(df["Agency Start Date"])
 
-# Trouble in conversion to datetime - moving on...
- 
-# Top 30 places with most workers pay registered are CUNY schools - Community Colleges. 
-# Mean base salary 
+# Trouble in conversion to datetime - moving on..
 
 ## 2014 AGENCY EMPLOYEES
 x1 = df[df["Fiscal Year"] == 2014]["Agency Name"].value_counts().sort_values(ascending=False)[0:10].values
