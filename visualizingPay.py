@@ -73,6 +73,8 @@ df.info() # Success
  
 # Top 30 places with most workers pay registered are CUNY schools - Community Colleges. 
 # Mean base salary 
+
+## 2014 AGENCY EMPLOYEES
 x1 = df[df["Fiscal Year"] == 2014]["Agency Name"].value_counts().sort_values(ascending=False)[0:10].values
 y1 = df[df["Fiscal Year"] == 2014]["Agency Name"].value_counts().sort_values(ascending=False)[0:10].index
 plt.rcParams['figure.figsize']= 9,7
@@ -83,9 +85,14 @@ sb.set_context("talk", font_scale=1.0)
 sb.despine()
 fontz = {'fontsize':22, 'fontweight': 'bold'}
 # ax1.set(xlabel='', ylabel='')
+
+## TOP AGENCIES WITH MOST EMPLOYEES in 2014
 ax1.set_title('Top 8 Agencies With Most Employees in 2014',loc='left',fontdict=fontz, alpha=.90)
 plt.text(x = 50000,y = 10.88, s="# of Employees")
 plt.text(x=-45000, y=10.87, s='Justin Nunez    Source: Kaggle', fontsize=11, color='#f0f0f0',backgroundcolor='grey')
+
+
+########## BEGINNING OF NESTED PLOTS
 
 # Could use a for loop or create a function to make this data... as well as for plotting
 ### Data 2014 plot
@@ -100,7 +107,6 @@ y3 = df[df["Fiscal Year"] == 2016]["Agency Name"].value_counts().sort_values(asc
 ### Data 2017 plot
 x4 = df[df["Fiscal Year"] == 2017]["Agency Name"].value_counts().sort_values(ascending=False)[0:8].values
 y4 = df[df["Fiscal Year"] == 2017]["Agency Name"].value_counts().sort_values(ascending=False)[0:8].index
-       
    # Plot 
 fig = plt.figure(figsize=(12,9))
 ax0 = fig.add_subplot(221)
@@ -123,7 +129,7 @@ plt.subplots_adjust(left=.05, right=.95,hspace=.5, wspace=1.4,top=.85)
 plt.text(x=80000, y=10.87, s='Justin Nunez    Source: Kaggle', fontsize=11, color='#f0f0f0',backgroundcolor='grey')
 plt.show()
 
-
+################################################################## END OF PLOT ABOVE
 # too many values that are negative or neglible
 df[df["Regular Gross Paid"] < 20]
 # We need to remove these
