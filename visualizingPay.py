@@ -46,6 +46,7 @@ df.isnull().sum() # A lot of missing values in our variable "Work Location Borou
 # 
 # And 21 missing values for Title Description. That's not bad.
 
+## Data Cleaning -
 df["Title Description"].value_counts() # Some titles have non-alpha characters, we would need to clean this up as well.
 # this shows us how many different types of occupations there are and how many times they occur.
 df["Base Salary"] = df["Base Salary"].str.replace('$','')
