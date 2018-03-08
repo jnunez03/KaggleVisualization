@@ -27,7 +27,9 @@ easily seeing them side by side and the bold color helps notice the bars and you
 ![Data](https://user-images.githubusercontent.com/23710841/37132455-ce1931f2-225b-11e8-81a0-700a8eb56c6b.png)
 
 ## Some Distributions
+![base](https://user-images.githubusercontent.com/23710841/37167217-4cb1fe5e-22cf-11e8-8df3-da3d00dc2fb9.png)
 
+![gross](https://user-images.githubusercontent.com/23710841/37167223-50d24a2a-22cf-11e8-8d75-079632a36385.png)
 
 ## Yearly?
 ![Data](https://user-images.githubusercontent.com/23710841/37130175-4d5b605e-2250-11e8-9160-28f1977473f9.png)
@@ -35,7 +37,7 @@ easily seeing them side by side and the bold color helps notice the bars and you
 ## With Kernal Densities you ask? (My computer didn't have the cpu power to  create a density for the 2017 graph)
 ![Data](https://user-images.githubusercontent.com/23710841/37130174-4d4a986e-2250-11e8-836f-fb260d5c8be2.png)
 
-## Normal Distribution Added (*The normal line for 2017 is 3 graphs up, however this one is Base Pay not Gross Pay*)
+## Normal Distribution Added (*The normal line for 2017 is 3 graphs up. Again, had a problem processing pixel density.)
 ![nested_distributions](https://user-images.githubusercontent.com/23710841/37166690-b7645550-22cd-11e8-81d9-f92b7fed14fc.png)
 
 
