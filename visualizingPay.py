@@ -8,7 +8,8 @@ import statsmodels.api as sm
 from pandas_datareader import data, wb
 from toolz import partitionby
 from matplotlib.ticker import MaxNLocator
-
+from matplotlib.font_manager import FontProperties
+from scipy import stats
 
 plt.style.use('fivethirtyeight')
 
@@ -72,11 +73,32 @@ df["Title Description"]= df["Title Description"].str.replace('[^A-Za-z\s]+', '')
 #"CHIEF ACTUARY" in df["Title Description"]
                
 
+              
 # Most Pay Based On Work Title   - -  - -  -  - -  - -                
-x = df[(df["Pay Basis"] == "per Annum") & (df["Regular Gross Paid"] > 14000) & (df["Base Salary"] > 14000)]
-x.groupby(["Fiscal Year","Title Description"])["Base Salary"].mean().sort_values(ascending=False)[:15]
-x.groupby(["Fiscal Year","Title Description"])["Regular Gross Paid"].mean().sort_values(ascending=False)[:15]
-#"CHIEF ACTUARY" in df["Title Description"]
+x = df[(df["Pay Basis"] == "per Annum") & (df["Regular Gross Paid"] > 10000) & (df["Base Salary"] > 10000)]
+
+
+# Who Made the least ?  plot
+x.groupby(["Fiscal Year","Title Description"])["Regular Gross Paid"].mean().sort_values(ascending=True)[:15].plot(kind='barh',color='lightslategray')
+plt.xticks(fontsize=11, weight= 'bold', color='black')
+plt.yticks(fontsize=9.0, weight='bold',color='black')
+plt.ylabel('')
+plt.xlabel('$',fontsize=9)
+plt.text(x=-3000, y=16, s="Lowest Paid Employees", fontsize=28, weight='bold',alpha=.93)
+plt.text(x=-3000, y=15.5, s="Employees On Annual Pay above $10,000",weight='bold',fontsize=10,alpha=.45)
+
+
+# Who Made the most ?  plot
+x.groupby(["Fiscal Year","Title Description"])["Regular Gross Paid"].mean().sort_values(ascending=False)[:15].plot(kind='barh',color='cadetblue')
+plt.xticks(fontsize=11, weight= 'bold',rotation=0, color='black')
+plt.yticks(fontsize=9.0, weight='bold',color='black')
+plt.ylabel('')
+plt.xlabel('$',fontsize=9)
+plt.text(x=-180000, y=16, s="Highest Paid Employees", fontsize=28, weight='bold',alpha=.93)
+plt.text(x=-180000, y=15.1, s="Employees On Annual Pay above $10,000",weight='bold',fontsize=10,alpha=.45)
+plt.axvline(x=(stats.trim_mean(x['Regular Gross Paid'].values, 0.1)), color='black', linewidth=1.3, alpha=.75)
+plt.annotate('Trimmed Mean',fontsize=9,xy=(65000,7.5), xytext=(68000,7.4), arrowprops=dict(arrowstyle='<-',facecolor='black',connectionstyle="arc3"))
+
 
 
 df.info() # Success
