@@ -21,9 +21,9 @@ easily seeing them side by side and the bold color helps notice the bars and you
 
 ## Top Salary by Borough over the years! 2014 to 2017.
 ![Data](https://user-images.githubusercontent.com/23710841/37130169-4d106356-2250-11e8-8414-dce65a7fbc0d.png)
-![Data](https://user-images.githubusercontent.com/23710841/37130171-4d266e80-2250-11e8-885f-c4970ec5b659.png)
-![Data](https://user-images.githubusercontent.com/23710841/37130172-4d36e1b6-2250-11e8-8d25-4536f7846942.png)
-![Data](https://user-images.githubusercontent.com/23710841/37130173-4d40d432-2250-11e8-9117-09fe39c76384.png)
+![Data](https://user-images.githubusercontent.com/23710841/37132454-ce0bc03a-225b-11e8-8b4d-8499deb533d2.png)
+![Data](https://user-images.githubusercontent.com/23710841/37132456-ce316c72-225b-11e8-85f4-0727f57c3576.png)
+![Data](https://user-images.githubusercontent.com/23710841/37132455-ce1931f2-225b-11e8-81a0-700a8eb56c6b.png)
 
 ## Some Distributions
 ![Data](https://user-images.githubusercontent.com/23710841/37130176-4d69bfaa-2250-11e8-8afe-c80c3051bd65.png)
