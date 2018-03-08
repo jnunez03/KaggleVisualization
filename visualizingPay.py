@@ -241,14 +241,20 @@ plt.text(x = 2.3, y = (mg["Regular Gross Paid"].mean() + 240), s="Average Gross 
 
 
 ### --- Distributions ---- ###
-new = df[(df["Pay Basis"] == "per Annum") & (df["Regular Gross Paid"] > 20000) & (df["Base Salary"] > 10000)]
+new = df[(df["Pay Basis"] == "per Annum") & (df["Regular Gross Paid"] > 10000) & (df["Base Salary"] > 10000)]
 cc = new[new["Fiscal Year"]==2014]
 dd = new[new["Fiscal Year"]==2015]
 ee = new[new["Fiscal Year"]==2016]
 ff = new[new["Fiscal Year"]==2017]
 
 # Year 2014
-sb.distplot(cc["Regular Gross Paid"], kde=False)
+# Year 2014 Distribution    
+from scipy.stats import norm
+sb.set_context("paper")
+sb.distplot(cc["Regular Gross Paid"],fit=norm,kde=False)
+plt.xlim(left=0, right=175000)
+plt.title('Distribution of Gross Pay 2017')
+
 
 # Distribution of Base Salary for Annual Employees making over 10,000
 fig1 = plt.figure(figsize=(12,9))
