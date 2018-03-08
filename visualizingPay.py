@@ -247,12 +247,22 @@ dd = new[new["Fiscal Year"]==2015]
 ee = new[new["Fiscal Year"]==2016]
 ff = new[new["Fiscal Year"]==2017]
 
-# Year 2017 Distribution    
+#  Distribution -   GROSS PAY GRAPH 2017
 sb.set_context("paper")
 sb.distplot(ff["Regular Gross Paid"],fit=norm,kde=False)
 #sb.set(xticks=np.arange(0,250000,50000))
 plt.xlim(left=0, right=200000)
 plt.title('Distribution of Gross Pay 2017')
+plt.text(x=100000, y=.000013, s="Sub-set of employees with salary above 10000", fontsize=8,alpha=.65)
+
+#  Distribution -   BASE SALARY GRAPH
+sb.set_context("paper")
+sb.distplot(ff["Base Salary"],fit=norm,kde=False)
+#sb.set(xticks=np.arange(0,250000,50000))
+plt.xlim(left=0, right=200000)
+plt.title('Distribution of Base Salary 2017')
+plt.text(x=100000, y=.000017, s="Sub-set of employees with salary above 10000", fontsize=8,alpha=.65)
+
 
 
 # Distribution of Base Salary for Annual Employees making over 10,000
@@ -308,6 +318,8 @@ plt.text(x=-5000, y=-15000, s='Justin Nunez    Source: Kaggle', fontsize=9, colo
 
 
 
+
+## EXTRA   --- ** GRAPHS NOT SHOWN IN README ** --- 
 
 # distribution of Gross Pay in 2014. (Graph Not Shown in README) (Did not add it)
 sb.kdeplot(cc["Regular Gross Paid"], shade=True)
