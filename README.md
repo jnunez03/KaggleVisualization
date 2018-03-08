@@ -1,2 +1,2 @@
-# Kaggle  Visualizations
-## NYC PAYROLL DATA
+# Project: Visualizing NYC Payroll Data
+###### Kaggle Data
