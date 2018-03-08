@@ -37,12 +37,13 @@ easily seeing them side by side and the bold color helps notice the bars and you
 
 ## What I Learned?
 - My intuition was definitely not the best guide. Much of the data will surprise you!
-- Data can be very difficult to work with. One of the variables was cleaned, but did not behave as a normal string type and I could not work with it fully. 
+- Data can be very difficult to work with. One of the variables was cleaned, but did not behave as a normal string type and I could not work with it fully. This dataset was very messy. A lot of things I refrained from doing (being short on time), so I worked with what I believed were results that would want to be seen, instead of being super nitpicky. I leave my nitpickiness for another data set.
 - I learned a lot more about python
 - Visualizing data definitely gives the overall picture of what is hidden in just words and numbers. Sure you could do this in excel, but definitely not with the caliber that python offers.
+## What I would have loved to do?
 - I would have liked to done more with distributions and maybe implement some machine learning just to play with it. But I will leave that for another day. Time was of the essence (sorry for the cliche).
-
-
+- Also, I would have liked to add a visual with the actual state of New York and color code by county the amount of employess. Note that there were counties outside of NY in this dataset, due to the fact that people work remotely.
+- I would have loved to figure out a way to fix one of my variables that just did not want to work as a string type so even a line of code like this ```python 'TEACHER' in df["Title Description"] ``` did not work and Teacher was inside of the data, just not "readable".
 
 
 
