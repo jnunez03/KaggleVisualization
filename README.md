@@ -35,6 +35,9 @@ easily seeing them side by side and the bold color helps notice the bars and you
 ## With Kernal Densities you ask? (My computer didn't have the cpu power to  create a density for the 2017 graph)
 ![Data](https://user-images.githubusercontent.com/23710841/37130174-4d4a986e-2250-11e8-836f-fb260d5c8be2.png)
 
+## Normal Distribution Added (*The normal line for 2017 is 3 graphs up, however this one is Base Pay not Gross Pay*)
+![nested_distributions](https://user-images.githubusercontent.com/23710841/37166690-b7645550-22cd-11e8-81d9-f92b7fed14fc.png)
+
 
 ## What I Learned?
 - My intuition was definitely not the best guide. Much of the data will surprise you!
