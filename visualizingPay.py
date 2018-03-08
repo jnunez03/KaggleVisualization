@@ -274,8 +274,10 @@ sb.distplot(ff["Base Salary"], kde=False, ax=ax9)
 plt.subplots_adjust(left=.05, right=.95,hspace=.5, wspace=.2,top=.85)
 plt.text(x=2000, y=-12000, s='Justin Nunez    Source: Kaggle', fontsize=9, color='#f0f0f0',backgroundcolor='grey')
 #plt.show()
+
+
 # ========================================================
-# Distributions with Normal Distribution Fits 
+# Distributions with Normal Distribution Fit Lines!!! 
 # Distribution of Base Salary for Annual Employees making over 10,000
 fig1 = plt.figure(figsize=(12,9))
 ax6 = fig1.add_subplot(221)
@@ -305,12 +307,14 @@ plt.text(x=-5000, y=-15000, s='Justin Nunez    Source: Kaggle', fontsize=9, colo
 # ==================================================================================
 
 
-# distribution of Gross Pay in 2014.
+
+
+# distribution of Gross Pay in 2014. (Graph Not Shown in README) (Did not add it)
 sb.kdeplot(cc["Regular Gross Paid"], shade=True)
 new.describe() # Shows that 541,544.90 is Max Salary.
 
           
-# histogram of 2017 Gross Pay 
+# Histogram of 2017 Gross Pay 
 ax5 = plt.subplot(111)
 ax5.spines['top'].set_visible(False)
 ax5.spines['right'].set_visible(False)
