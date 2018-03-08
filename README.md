@@ -9,8 +9,9 @@ Here is a breakdown of the most employees by Agency per year. I chose to use thi
 easily seeing them side by side and the bold color helps notice the bars and you could see the difference in the heights per year. One thing to note is the size of "Police Department" is different between the years due to the name not being a unique value in the data set.
 ![Data](https://user-images.githubusercontent.com/23710841/37130180-4d91b410-2250-11e8-9a13-6ffca0f3f688.png)
 
-Here is the mean Base Salary and Gross Salary and how they changed over the years. These could have been merged into one graph, just to note. 
+Here is the mean Base Salary and Gross Salary and how they changed over the years. 
 ![Data](https://user-images.githubusercontent.com/23710841/37130181-4d9ca956-2250-11e8-8ca6-799e8f92bb74.png)
+These could have been merged into one graph, just to note.
 ![Data](https://user-images.githubusercontent.com/23710841/37130182-4daa812a-2250-11e8-955d-922d516f0543.png)
 
 Who were the lowest paid employees and in what years (We could have done a breakdown year by year and graph the change)?
