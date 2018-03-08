@@ -247,12 +247,11 @@ dd = new[new["Fiscal Year"]==2015]
 ee = new[new["Fiscal Year"]==2016]
 ff = new[new["Fiscal Year"]==2017]
 
-# Year 2014
-# Year 2014 Distribution    
-from scipy.stats import norm
+# Year 2017 Distribution    
 sb.set_context("paper")
-sb.distplot(cc["Regular Gross Paid"],fit=norm,kde=False)
-plt.xlim(left=0, right=175000)
+sb.distplot(ff["Regular Gross Paid"],fit=norm,kde=False)
+#sb.set(xticks=np.arange(0,250000,50000))
+plt.xlim(left=0, right=200000)
 plt.title('Distribution of Gross Pay 2017')
 
 
