@@ -7,7 +7,7 @@ The data isn't anything special, but it offers a lot of cleaning and discerning!
 
 ## Here is a breakdown of the most employees by Agency per year. 
 I chose to use this style of graph that way you can see any discrepancies
-easily seeing them side by side and the bold color helps notice the bars and you could see the difference in the heights per year. One thing to note is the size of "Police Department" is different between the years due to the name not being a unique value in the data set. Another thing is there are a lot of Different Departmens and these could be merged into 1 category. For instance, colleges could become 1 variable1 instead of having "Hostos CC, Laguardia CC" as separate variables. 
+easily seeing them side by side and the bold color helps notice the bars and you could see the difference in the heights per year. One thing to note is the size of "Police Department" is different between the years due to the name not being a unique value in the data set. Another thing is there are a lot of Different Departments and could be categorized into "Education", etc., and these could be merged into 1 category. For instance, colleges could become 1 variable1 instead of having "Hostos CC, Laguardia CC" as separate variables. Another things, the Department of Education Admin seems to be cutting workers, as it only showed in 2014 graph. 
 ![Data](https://user-images.githubusercontent.com/23710841/37130180-4d91b410-2250-11e8-9a13-6ffca0f3f688.png)
 
 ## Here is the mean Base Salary and Gross Salary and how they changed over the years. 
