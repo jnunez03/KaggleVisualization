@@ -11,7 +11,7 @@ easily seeing them side by side and the bold color helps notice the bars and you
 
 Here is the mean Base Salary and Gross Salary and how they changed over the years. 
 ![Data](https://user-images.githubusercontent.com/23710841/37130181-4d9ca956-2250-11e8-8ca6-799e8f92bb74.png)
-These could have been merged into one graph, just to note.
+
 ![Data](https://user-images.githubusercontent.com/23710841/37130182-4daa812a-2250-11e8-955d-922d516f0543.png)
 
 Who were the lowest paid employees and in what years (We could have done a breakdown year by year and graph the change)?
