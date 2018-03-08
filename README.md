@@ -35,7 +35,11 @@ easily seeing them side by side and the bold color helps notice the bars and you
 ![Data](https://user-images.githubusercontent.com/23710841/37130174-4d4a986e-2250-11e8-836f-fb260d5c8be2.png)
 
 
-
+## What I Learned?
+- My intuition was definitely not the best guide. Much of the data will surprise you!
+- Data can be very difficult to work with. One of the variables was cleaned, but did not behave as a normal string type and I could not work with it fully. 
+- I learned a lot more about python
+- Visualizing data definitely gives the overall picture of what is hidden in just words and numbers. Sure you could do this in excel, but definitely not with the caliber that python offers.
 
 
 
