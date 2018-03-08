@@ -47,7 +47,7 @@ easily seeing them side by side and the bold color helps notice the bars and you
 - I learned a lot more about python
 - Visualizing data definitely gives the overall picture of what is hidden in just words and numbers. Sure you could do this in excel, but definitely not with the caliber that python offers.
 - Seeing negative salaries was shocking and salaries that were very small. It didn't trip me, I just knew that some people are hired as poll workers, or seasonally and may have salaries under 10,000, so most of my analysis was using a subset of the overall data to leave out all the "seasonal" or temporary workers hired and to get a better detail of true annual salaries.
-## What I would have loved to do?
+## What I would have loved to do?  (Better Stated: What I Will try to add at a later date. The analytics in me will push me.)
 - I would have liked to done more with distributions and maybe implement some machine learning just to play with it. But I will leave that for another day. Time was of the essence (sorry for the cliche).
 - Also, I would have liked to add a visual with the actual state of New York and color code by county the amount of employess/salary. Note that there were counties outside of NY in this dataset, due to the fact that people work remotely.
 - I would have loved to figure out a way to fix one of my variables that just did not want to work as a string type so even a line of code like this ```'TEACHER' in df["Title Description"] ``` did not work and Teacher was inside of the data, just not "readable", despite me trying to strip whitespace, non-alpha characters, and casting it to string type. I will look more into this!
