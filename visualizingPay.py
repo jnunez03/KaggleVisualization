@@ -274,9 +274,39 @@ sb.distplot(ff["Base Salary"], kde=False, ax=ax9)
 plt.subplots_adjust(left=.05, right=.95,hspace=.5, wspace=.2,top=.85)
 plt.text(x=2000, y=-12000, s='Justin Nunez    Source: Kaggle', fontsize=9, color='#f0f0f0',backgroundcolor='grey')
 #plt.show()
+# ========================================================
+# Distributions with Normal Distribution Fits 
+# Distribution of Base Salary for Annual Employees making over 10,000
+fig1 = plt.figure(figsize=(12,9))
+ax6 = fig1.add_subplot(221)
+ax7 = fig1.add_subplot(222)
+ax8  = fig1.add_subplot(223)
+ax9 = fig1.add_subplot(224)
+ # titles 
+fig1.suptitle("Base Salary Distribution (Salary > $10,000) in...",fontweight='bold', fontsize=22)
+ax6.title.set_text('2014')
+ax7.title.set_text('2015')
+ax8.title.set_text('2016')
+ax9.title.set_text('2017')
+sb.distplot(cc["Base Salary"],fit=norm,kde=False, ax=ax6)
+ax6.set_xlim(0,185000)
+ax7.set_xlim(0,185000)
+ax8.set_xlim(0,185000)
+ax9.set_xlim(0,185000)
+sb.distplot(dd["Base Salary"],fit=norm,kde=False, ax=ax7)
+plt.xlim(left=0, right=200000)
+sb.distplot(ee["Base Salary"],fit=norm,kde=False, ax=ax8)
+plt.xlim(left=0, right=200000)
+sb.distplot(ff["Base Salary"], kde=False, ax=ax9)
+plt.subplots_adjust(left=.05, right=.95,hspace=.5, wspace=.35,top=.85)
+#plt.xlim(left=0, right=175000)
+plt.text(x=-5000, y=-15000, s='Justin Nunez    Source: Kaggle', fontsize=9, color='#f0f0f0',backgroundcolor='grey')
+# WONT RUN in the 4th distplot, so thats why its not on the 2017 graph.
+# ==================================================================================
+
 
 # distribution of Gross Pay in 2014.
-sb.kdeplot(new["Regular Gross Paid"], shade=True)
+sb.kdeplot(cc["Regular Gross Paid"], shade=True)
 new.describe() # Shows that 541,544.90 is Max Salary.
 
           
