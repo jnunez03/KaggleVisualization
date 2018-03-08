@@ -40,6 +40,7 @@ easily seeing them side by side and the bold color helps notice the bars and you
 - Data can be very difficult to work with. One of the variables was cleaned, but did not behave as a normal string type and I could not work with it fully. This dataset was very messy. A lot of things I refrained from doing (being short on time), so I worked with what I believed were results that would want to be seen, instead of being super nitpicky. I leave my nitpickiness for another data set.
 - I learned a lot more about python
 - Visualizing data definitely gives the overall picture of what is hidden in just words and numbers. Sure you could do this in excel, but definitely not with the caliber that python offers.
+- Seeing negative salaries was shocking and salaries that were very small. It didn't trip me, I just knew that some people are hired as poll workers, or seasonally and may have salaries under 10,000, so most of my analysis was using a subset of the overall data to leave out all the "seasonal" or temporary workers hired and to get a better detail of true annual salaries.
 ## What I would have loved to do?
 - I would have liked to done more with distributions and maybe implement some machine learning just to play with it. But I will leave that for another day. Time was of the essence (sorry for the cliche).
 - Also, I would have liked to add a visual with the actual state of New York and color code by county the amount of employess. Note that there were counties outside of NY in this dataset, due to the fact that people work remotely.
