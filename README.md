@@ -7,14 +7,14 @@ The data isn't anything special, but it offers a lot of cleaning and discerning!
 
 ## Here is a breakdown of the most employees by Agency per year. 
 I chose to use this style of graph that way you can see any discrepancies
-easily seeing them side by side and the bold color helps notice the bars and you could see the difference in the heights per year. One thing to note is the size of "Police Department" is different between the years due to the name not being a unique value in the data set. Another thing is there are a lot of different departments and could be categorized based on context, for example, "Education", etc., and these could be merged into 1 category. For instance, colleges could be merged instead of having "Hostos CC, Laguardia CC, etc." as separate index rows.
+easily seeing them side by side and the bold color helps notice the bars and you could see the difference in the heights per year. One thing to note is the size of "Police Department" is different between the years due to the name not being a unique value in the data set. Another thing is there are a lot of different departments and could be categorized based on context, for example, "Education", etc., and these could be merged into 1 category. For instance, colleges could be merged instead of having "Hostos CC, Laguardia CC, etc." as separate index rows. I also couldn't do further analysis on individual "work titles" like distribution of pay between teachers and fire-fighters, because that was the variable that was giving me much trouble and I couldn't figure out how to fix it.
 ![Data](https://user-images.githubusercontent.com/23710841/37132894-3c34f71e-225e-11e8-81b9-f24a0542c03b.png)
 
 ## Here is the mean Base Salary and Gross Salary and how they changed over the years. 
 ![Data](https://user-images.githubusercontent.com/23710841/37130181-4d9ca956-2250-11e8-8ca6-799e8f92bb74.png)
 
 ![Data](https://user-images.githubusercontent.com/23710841/37130182-4daa812a-2250-11e8-955d-922d516f0543.png)
-- Axis on these graphs are slightly different due to Base Salary being an integer and Gross Salary being a float data type.
+- Axis on these graphs are slightly different due to Base Salary being an integer and Gross Salary being a float data type. This is could easily be fixed, by making Gross Pay variable an integer.
 ## Who were the lowest paid employees and in what years? (We could have done a breakdown year by year and graph the change)
 ![Data](https://user-images.githubusercontent.com/23710841/37130179-4d881efa-2250-11e8-8f2d-81c347f94040.png)
 ## Who were the highest paid employees and in what years?
