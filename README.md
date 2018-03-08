@@ -40,7 +40,7 @@ easily seeing them side by side and the bold color helps notice the bars and you
 - Data can be very difficult to work with. One of the variables was cleaned, but did not behave as a normal string type and I could not work with it fully. 
 - I learned a lot more about python
 - Visualizing data definitely gives the overall picture of what is hidden in just words and numbers. Sure you could do this in excel, but definitely not with the caliber that python offers.
-
+- I would have liked to done more with distributions and maybe implement some machine learning just to play with it. But I will leave that for another day. Time was of the essence (sorry for the cliche).
 
 
 
