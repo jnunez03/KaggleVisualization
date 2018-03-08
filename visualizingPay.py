@@ -65,7 +65,7 @@ df["Total OT Paid"] = df["Total OT Paid"].astype(float)
 df["Total Other Pay"] = df["Total Other Pay"].astype(float)
 df["Title Description"] = df["Title Description"].astype(str)
 df["Title Description"] = df["Title Description"].str.strip()
-
+# Gets rid of Non-Alpha Characters in this column
 df["Title Description"]= df["Title Description"].str.replace('[^A-Za-z\s]+', '')
 
 'TEACHER' in df["Title Description"] # Doesn't seem to read the string.
@@ -82,10 +82,9 @@ x.groupby(["Fiscal Year","Title Description"])["Regular Gross Paid"].mean().sort
 df.info() # Success
 
 # Now change Start Date variable to real datetime object in Pandas. 
-# df["Agency Start Date"] = df["Agency Start Date"].str.replace('/','-')
 # df["Agency Start Date"] = pd.to_datetime(df["Agency Start Date"])
 
-# Trouble in conversion to datetime - moving on..
+
 
 ## 2014 AGENCY EMPLOYEES
 x1 = df[df["Fiscal Year"] == 2014]["Agency Name"].value_counts().sort_values(ascending=False)[0:10].values
