@@ -273,8 +273,8 @@ plt.text(x=2000, y=-12000, s='Justin Nunez    Source: Kaggle', fontsize=9, color
 #plt.show()
 
 # distribution of Gross Pay in 2014.
-sb.kdeplot(b["Regular Gross Paid"], shade=True)
-b.describe() # Shows that 541,544.90 is Max Salary.
+sb.kdeplot(new["Regular Gross Paid"], shade=True)
+new.describe() # Shows that 541,544.90 is Max Salary.
 
           
 # histogram of 2017 Gross Pay 
