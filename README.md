@@ -27,7 +27,7 @@ easily seeing them side by side and the bold color helps notice the bars and you
 ![Data](https://user-images.githubusercontent.com/23710841/37132455-ce1931f2-225b-11e8-81a0-700a8eb56c6b.png)
 
 ## Some Distributions
-![realdistribution2017](https://user-images.githubusercontent.com/23710841/37165729-584e4a8c-22cb-11e8-91a7-503958aae76d.png)
+
 
 ## Yearly?
 ![Data](https://user-images.githubusercontent.com/23710841/37130175-4d5b605e-2250-11e8-9160-28f1977473f9.png)
