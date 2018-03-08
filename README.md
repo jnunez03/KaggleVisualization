@@ -43,7 +43,7 @@ easily seeing them side by side and the bold color helps notice the bars and you
 ## What I would have loved to do?
 - I would have liked to done more with distributions and maybe implement some machine learning just to play with it. But I will leave that for another day. Time was of the essence (sorry for the cliche).
 - Also, I would have liked to add a visual with the actual state of New York and color code by county the amount of employess. Note that there were counties outside of NY in this dataset, due to the fact that people work remotely.
-- I would have loved to figure out a way to fix one of my variables that just did not want to work as a string type so even a line of code like this ```python 'TEACHER' in df["Title Description"] ``` did not work and Teacher was inside of the data, just not "readable".
+- I would have loved to figure out a way to fix one of my variables that just did not want to work as a string type so even a line of code like this ```'TEACHER' in df["Title Description"] ``` did not work and Teacher was inside of the data, just not "readable", despite me trying to strip whitespace, non-alpha characters, and casting it to string type. I will look more into this!
 
 
 
@@ -67,4 +67,4 @@ easily seeing them side by side and the bold color helps notice the bars and you
 
 
 
-###### Data from Kaggle
+###### Data from [Kaggle](https://www.kaggle.com/competitions)
