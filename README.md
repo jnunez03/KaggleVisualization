@@ -26,7 +26,6 @@ easily seeing them side by side and the bold color helps notice the bars and you
 ![Data](https://user-images.githubusercontent.com/23710841/37130173-4d40d432-2250-11e8-9117-09fe39c76384.png)
 
 ## Some Distributions
-/ How did things look in 2017?
 ![Data](https://user-images.githubusercontent.com/23710841/37130176-4d69bfaa-2250-11e8-8afe-c80c3051bd65.png)
 
 ## Yearly?
