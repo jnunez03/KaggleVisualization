@@ -5,8 +5,6 @@ import seaborn as sb
 from pandas import Series, DataFrame
 from pylab import *
 import statsmodels.api as sm
-from pandas_datareader import data, wb
-from toolz import partitionby
 from matplotlib.ticker import MaxNLocator
 from matplotlib.font_manager import FontProperties
 from scipy import stats
@@ -212,7 +210,7 @@ plt.text(x = 2.5, y = (b["Regular Gross Paid"].mean() + 240), s="Average Gross P
 l = x[x["Fiscal Year"]==2015]
 l.groupby(["Work Location Borough"])["Regular Gross Paid"].mean().sort_values(ascending=False)[:8].plot(kind='bar',color='darkcyan')
 plt.xticks(fontsize=7.4, weight= 'bold',rotation=0, color='black')
-plt.text(x=-.8, y=95000, s="Top 4 Boroughs with Highest Average Gross Pay in 2015", fontsize=26, weight='bold',alpha=.90)
+plt.text(x=-.8, y=95000, s="Top 8 Boroughs with Highest Average Gross Pay in 2015", fontsize=26, weight='bold',alpha=.90)
 plt.text(x=-.8, y=89900, s="Employees On Annual Pay above $20,000",fontsize=12,alpha=.75)
 plt.xlabel('')
 plt.axhline(y=l["Regular Gross Paid"].mean(), color='black', linewidth=1.3, alpha=.75)
@@ -222,7 +220,7 @@ plt.text(x = 2.5, y = (l["Regular Gross Paid"].mean() + 240), s="Average Gross P
 lg= x[x["Fiscal Year"]==2016]
 lg.groupby(["Work Location Borough"])["Regular Gross Paid"].mean().sort_values(ascending=False)[:8].plot(kind='bar',color='darkcyan')
 plt.xticks(fontsize=7.4, weight= 'bold',rotation=0, color='black')
-plt.text(x=-.8, y=109000, s="Top 4 Boroughs with Highest Average Gross Pay in 2016", fontsize=26, weight='bold',alpha=.90)
+plt.text(x=-.8, y=109000, s="Top 8 Boroughs with Highest Average Gross Pay in 2016", fontsize=26, weight='bold',alpha=.90)
 plt.text(x=-.8, y=103000, s="Employees On Annual Pay above $20,000",fontsize=12,alpha=.75)
 plt.xlabel('')
 plt.axhline(y=lg["Regular Gross Paid"].mean(), color='black', linewidth=1.3, alpha=.75)
@@ -232,7 +230,7 @@ plt.text(x = 2.5, y = (lg["Regular Gross Paid"].mean() + 240), s="Average Gross 
 mg= x[x["Fiscal Year"]==2017]
 mg.groupby(["Work Location Borough"])["Regular Gross Paid"].mean().sort_values(ascending=False)[:8].plot(kind='bar',color='darkcyan')
 plt.xticks(fontsize=7.4, weight= 'bold',rotation=0, color='black')
-plt.text(x=-.8, y=117000, s="Top 4 Boroughs with Highest Average Gross Pay in 2017", fontsize=26, weight='bold',alpha=.90)
+plt.text(x=-.8, y=117000, s="Top 8 Boroughs with Highest Average Gross Pay in 2017", fontsize=26, weight='bold',alpha=.90)
 plt.text(x=-.8, y=110000, s="Employees On Annual Pay above $20,000",fontsize=12,alpha=.75)
 plt.xlabel('')
 plt.axhline(y=mg["Regular Gross Paid"].mean(), color='black', linewidth=1.3, alpha=.75)
