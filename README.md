@@ -14,7 +14,7 @@ easily seeing them side by side and the bold color helps notice the bars and you
 ![Data](https://user-images.githubusercontent.com/23710841/37130181-4d9ca956-2250-11e8-8ca6-799e8f92bb74.png)
 
 ![Data](https://user-images.githubusercontent.com/23710841/37130182-4daa812a-2250-11e8-955d-922d516f0543.png)
-
+Axis on these graphs are slightly different due to Base Salary being an integer and Gross Salary being a float data type.
 ## Who were the lowest paid employees and in what years? (We could have done a breakdown year by year and graph the change)
 ![Data](https://user-images.githubusercontent.com/23710841/37130179-4d881efa-2250-11e8-8f2d-81c347f94040.png)
 ## Who were the highest paid employees and in what years?
