@@ -52,6 +52,7 @@ easily seeing them side by side and the bold color helps notice the bars and you
 ## 2017 QQplot
 ![2017](https://user-images.githubusercontent.com/23710841/37192667-bfb51b74-2334-11e8-9688-0d56601776d3.png)
 
+None of these plots look like they would go through the origin if they were straight lines. 
 
 ## What I Learned?
 - My intuition was definitely not the best guide. Much of the data will surprise you!
