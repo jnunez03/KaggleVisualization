@@ -335,3 +335,24 @@ ax5.get_yaxis().tick_left()
 plt.xticks(fontsize=14)
 plt.text(x=1000, y= 21000, s="Distribution of Gross Pay in 2017", fontsize=27, fontweight='bold')
 plt.hist(list(ff["Regular Gross Paid"].values), color="#3F5D7D", bins=100)
+
+## QQ PLOTS
+
+x = df[(df["Pay Basis"] == "per Annum") & (df["Regular Gross Paid"] > 20000) & (df["Base Salary"] > 20000)]
+
+cc = x[x["Fiscal Year"]==2014]
+dd = x[x["Fiscal Year"]==2015]
+ee = x[x["Fiscal Year"]==2016]
+ff = x[x["Fiscal Year"]==2017]
+
+sm.qqplot(cc["Regular Gross Paid"], line='q')
+sm.qqplot(dd["Regular Gross Paid"], line='q')
+sm.qqplot(ee["Regular Gross Paid"], line='q')
+
+
+# Added flare to the plot aesthetics
+fig = sm.qqplot(ff["Regular Gross Paid"], line='q');
+# Grab the lines with blue dots
+dots = fig.findobj(lambda x: hasattr(x, 'get_color') and x.get_color() == 'b')
+[d.set_alpha(0.3) for d in dots]
+
