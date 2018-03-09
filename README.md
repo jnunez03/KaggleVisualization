@@ -43,13 +43,13 @@ easily seeing them side by side and the bold color helps notice the bars and you
 ## QQ Plots
 [The Q-Q plot, or quantile-quantile plot, is a graphical tool to help us assess if a set of data plausibly came from some theoretical distribution such as a Normal or exponential. ... A Q-Q plot is a scatterplot created by plotting two sets of quantiles against one another.](http://data.library.virginia.edu/understanding-q-q-plots/)
 - This tests if our data is truly "Normal"
-## 2014 QQplot
+## 2014 QQplot of Gross Pay 
 ![2014](https://user-images.githubusercontent.com/23710841/37192663-bf769426-2334-11e8-8d30-de24921befea.png)
-## 2015 QQplot
+## 2015 QQplot of Gross Pay
 ![2015](https://user-images.githubusercontent.com/23710841/37192664-bf8f5a38-2334-11e8-9541-e77f63b7ecd1.png)
-## 2016 QQplot
+## 2016 QQplot of Gross Pay
 ![2016](https://user-images.githubusercontent.com/23710841/37192665-bfa3fe98-2334-11e8-9379-e518f6c94701.png)
-## 2017 QQplot
+## 2017 QQplot of Gross Pay
 ![2017](https://user-images.githubusercontent.com/23710841/37192667-bfb51b74-2334-11e8-9688-0d56601776d3.png)
 
 None of these plots look like they would go through the origin if they were straight lines. However, even when following a normal distribution, a qq-plot is almost never near perfect. What is displayed in the curve-ish like form away from the quantile line is an indicator of skewed data and data with heavy tails (kurtosis). These in particular look like they fall under a chi-squared distribution or a student t-distribution. However, in this case it is normal, but possesses a right skew! 
