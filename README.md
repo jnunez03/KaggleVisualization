@@ -53,8 +53,7 @@ easily seeing them side by side and the bold color helps notice the bars and you
 ![2017](https://user-images.githubusercontent.com/23710841/37192667-bfb51b74-2334-11e8-9688-0d56601776d3.png)
 
 None of these plots look like they would go through the origin if they were straight lines. However, even when following a normal distribution, a qq-plot is almost never near perfect. What is displayed in the curve-ish like form away from the quantile line is an indicator of skewed data and data with heavy tails (kurtosis). These in particular look like they fall under a chi-squared distribution or a student t-distribution. However, in this case it is normal, but possesses a right skew! 
-## There is some skewness in our Gross Paid data. This leads me to study the other variables: Total OT paid - Total Other Pay!
-## Studying further we can see if this "other pay" is what is causing the skewness. However, doing a QQplot of base salary the same skewness still appears which shows me this is not due to the OT paid and Total other pay. 
+## There is some skewness in our Gross Paid data. This leads me to study the other variables: Total OT paid - Total Other Pay! Studying further we can see if this "other pay" is what is causing the skewness. However, doing a QQplot of base salary the same skewness still appears which shows me this is not due to the OT paid and Total other pay. 
 
 ## What I Learned?
 - My intuition was definitely not the best guide. Much of the data will surprise you!
