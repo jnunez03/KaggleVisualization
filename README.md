@@ -40,6 +40,10 @@ easily seeing them side by side and the bold color helps notice the bars and you
 ## Normal Distribution Added (*The normal line for 2017 is 3 graphs up. Again, had a problem processing pixel density.)
 ![nested_distributions](https://user-images.githubusercontent.com/23710841/37166690-b7645550-22cd-11e8-81d9-f92b7fed14fc.png)
 
+## QQ Plots
+[The Q-Q plot, or quantile-quantile plot, is a graphical tool to help us assess if a set of data plausibly came from some theoretical distribution such as a Normal or exponential. ... A Q-Q plot is a scatterplot created by plotting two sets of quantiles against one another.](http://data.library.virginia.edu/understanding-q-q-plots/)
+- This tests if our data is truly "Normal"
+
 
 ## What I Learned?
 - My intuition was definitely not the best guide. Much of the data will surprise you!
