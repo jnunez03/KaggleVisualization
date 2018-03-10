@@ -67,8 +67,8 @@ This leads me to study the other variables: Total OT paid - Total Other Pay! Stu
 - Also, I would have liked to add a visual with the actual state of New York and color code by county the amount of employess/salary. Note that there were counties outside of NY in this dataset, due to the fact that people work remotely.
 - I would have loved to figure out a way to fix one of my variables that just did not want to work as a string type so even a line of code like this ```'TEACHER' in df["Title Description"] ``` did not work and Teacher was inside of the data, just not "readable", despite me trying to strip whitespace, non-alpha characters, and casting it to string type. I will look more into this!
 
-
-## UPDATE 1.0!
+__________________________________________________________________________________________________________________
+# UPDATE 1.0!
 I was able to fix my variable. So now I can look deeper into each job title such as teachers, firefighters, etc and do further analysis. I could check for difference in pay vs experience working as well as distributions of pay for specific job titles, etc..
 
 ###### Data from [Kaggle](https://www.kaggle.com/competitions)
