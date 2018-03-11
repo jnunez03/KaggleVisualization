@@ -350,10 +350,113 @@ sm.qqplot(cc["Regular Gross Paid"], line='q')
 sm.qqplot(dd["Regular Gross Paid"], line='q')
 sm.qqplot(ee["Regular Gross Paid"], line='q')
 
-
 # Added flare to the plot aesthetics
 fig = sm.qqplot(ff["Regular Gross Paid"], line='q');
 # Grab the lines with blue dots
 dots = fig.findobj(lambda x: hasattr(x, 'get_color') and x.get_color() == 'b')
 [d.set_alpha(0.3) for d in dots]
+
+
+
+#     -                 -               -        -        -                -              -             #
+
+###          - ** -               CODE FOR   UPDATE 1.0.   MARCH 10, 2018        - ** -                ### 
+
+
+## """   TEACHER ANALYSIS """ ## 
+
+# CLEAN VARIABLE FIRST !
+df["Title Description"] = df["Title Description"].astype(str)
+
+# Testing how to deal with this variable.... none of these needed.
+#df["Title Description"] = df["Title Description"].astype('str')
+#df["Title Description"] = df["Title Description"].str.strip('')
+#df["Title Description"] = df["Title Description"].astype('|S80')
+#df["Title Description"] = df["Title Description"].astype('|S80')
+
+#Get Rid of Non-Alpha Characters.
+df["Title Description"]= df["Title Description"].str.replace('[^A-Za-z\s]+', '')
+
+df["Title Description"] = df["Title Description"].apply(str)
+
+df["Title Description"] = df["Title Description"].str.lstrip()
+df["Title Description"] = df["Title Description"].str.lower()
+
+'teacher' in df["Title Description"] # Doesn't seem to work.
+df["Agency Start Date"] = df["Agency Start Date"].str.lstrip()
+
+df["job_title"] = df["Title Description"].str.extract('([a-zA-Z ]+)', expand=False).str.strip().str.lstrip()  
+df["job_title"].str.contains('teacher').any() # TRUE
+is_teacher = df.job_title.str.contains("teacher")
+
+# SUBSET OF TEACHERS PAID ANNUALLY!
+teacher = df[(df.job_title == 'teacher') & (df["Pay Basis"] == "per Annum")] 
+
+# Data of teachers in 2017.
+teacher4 = teacher[teacher["Fiscal Year"] == 2017] 
+
+#CLEAN OTHER VARIABLE 
+teacher4["Agency Start Date"] = teacher4["Agency Start Date"].str.lstrip() 
+
+#Extract the year from Start Date
+teacher4["Start_Year"] = teacher4["Agency Start Date"].str[6:10].sort_values(ascending=True)
+# Cast to integer
+teacher4["Start_Year"] = teacher4["Start_Year"].astype(int)
+
+# Get rid of year 1999 and only look at employees with starting dates of 2000 to 2017!
+above2000  = teacher4[(teacher4["Start_Year"] >= 2000) & (teacher4["Start_Year"]< 9000)]
+
+# PLOTS  --- 
+
+## GROSS PAY Mean/Median PAY FOR TEACHERS YEAR 2000 - 2017
+above2000.groupby(["Start_Year"])["Regular Gross Paid"].mean().plot(linewidth=2.25)
+above2000.groupby(["Start_Year"])["Regular Gross Paid"].median().plot(linewidth=2.25)
+plt.text(x=1999, y=98500, s="Average Gross Pay For Teachers in 2017", fontsize=28, weight='bold',alpha=.93)
+plt.text(x=1999, y=94400, s="Based On Year They Started Working", fontsize=14, weight='bold',alpha=.78)
+plt.text(x=2005, y=84000, s="Median", fontsize=14, weight='bold',alpha=.93, color='red')
+plt.text(x=2005, y=69700, s="Mean", fontsize=14, weight='bold',alpha=.93, color='steelblue')
+plt.axhline(y=20000, color='black', linewidth=1.3, alpha=.75)
+plt.ylabel('$   ', fontsize=15, rotation=0, weight='bold')
+plt.xlabel('Year Started Working',fontsize=13, weight='bold')
+
+## BASE PAY Mean/Median FOR TEACHERS YEAR 2000 - 2017
+above2000.groupby(["Start_Year"])["Base Salary"].mean().plot(linewidth=2.25)
+above2000.groupby(["Start_Year"])["Base Salary"].median().plot(linewidth=2.25)
+plt.text(x=1999, y=101100, s="Average Base Salary For Teachers in 2017", fontsize=28, weight='bold',alpha=.93)
+plt.text(x=1999, y=97000, s="Based On Year They Started Working", fontsize=14, weight='bold',alpha=.78)
+plt.text(x=2005, y=91000, s="Median", fontsize=14, weight='bold',alpha=.93, color='red')
+plt.text(x=2005, y=81700, s="Mean", fontsize=14, weight='bold',alpha=.93, color='steelblue')
+plt.axhline(y=20000, color='black', linewidth=1.3, alpha=.75)
+plt.ylabel('$   ', fontsize=15, rotation=0, weight='bold')
+plt.xlabel('Year Started Working',fontsize=13, weight='bold')
+
+# Number of Workers Added Per Year PLOT
+a1 = above2000["Start_Year"].value_counts().sort_values(ascending=False).index
+a2 = above2000["Start_Year"].value_counts().sort_values(ascending=False).value
+ax=plt.axes()
+sb.barplot(x=a1, y=a2, palette='BuGn_d', saturation=1,ax=ax)
+ax.set_title("Number Of Teachers Added Per Year", fontsize=24, weight='bold',alpha=.93)
+plt.show()
+
+# 2017 Teacher pay distribution (1 year of experience)
+sb.distplot(above2000[above2000["Start_Year"] == 2017]["Regular Gross Paid"],fit=norm, kde=False)
+
+## 17 year experience Distribution plot
+sb.distplot(above2000[above2000["Start_Year"] == 2000]["Regular Gross Paid"],kde=False)
+
+## Relationships between variables plots!
+# Does TOTAL OTHER PAY relate to Salary in 2016??  Let's check.
+b = above2000[above2000["Start_Year"] == 2016]
+sb.jointplot(x="Regular Gross Paid",y="Total Other Pay",data=b)
+sb.jointplot(x="Base Salary",y="Total Other Pay",data=b)
+# 2016 - Base and Gross
+sb.jointplot(x="Base Salary",y="Regular Gross Paid",data=b)
+
+# HOW ABOUT 2017
+cc = above2000[above2000["Start_Year"] == 2017]
+sb.jointplot(x="Regular Gross Paid",y="Total Other Pay",data=cc)
+sb.jointplot(x="Base Salary",y="Total Other Pay",data=cc)
+sb.jointplot(x="Base Salary",y="Regular Gross Paid",data=cc)
+
+
 
