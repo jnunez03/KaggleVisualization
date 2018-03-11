@@ -86,8 +86,8 @@ Let's see how the pay is distributed based on years of experience!
 - I learned a lot more about python
 - Visualizing data definitely gives the overall picture of what is hidden in just words and numbers. Sure you could do this in excel, but definitely not with the caliber that python offers.
 - Seeing negative salaries was shocking and salaries that were very small. It didn't trip me, I just knew that some people are hired as poll workers, or seasonally and may have salaries under 10,000, so most of my analysis was using a subset of the overall data to leave out all the "seasonal" or temporary workers hired and to get a better detail of true annual salaries.
-## What I would have loved to do?  (Better Stated: What I will try to add at a later date. The analytics in me will push me!)
-- I would have liked to done more with distributions and maybe implement some machine learning just to play with it. But I will leave that for another day. Time was of the essence (sorry for the cliche).
+## What I would love to do? (Coming Soon!)
+- I want to implement some machine learning just to play with it. But I will leave that for another day.
 - Also, I would have liked to add a visual with the actual state of New York and color code by county the amount of employess/salary. Note that there were counties outside of NY in this dataset, due to the fact that people work remotely.
 
 
