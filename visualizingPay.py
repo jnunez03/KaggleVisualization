@@ -458,5 +458,15 @@ sb.jointplot(x="Regular Gross Paid",y="Total Other Pay",data=cc)
 sb.jointplot(x="Base Salary",y="Total Other Pay",data=cc)
 sb.jointplot(x="Base Salary",y="Regular Gross Paid",data=cc)
 
+# 1995 (22 Years of experience) Pay Distribution Plot.
+
+nn = teacher4[(teacher4["Start_Year"] >= 1994) & (teacher4["Start_Year"]< 9000)]
+nn.head()
+year1995 = nn[nn["Start_Year"] == 1995]
+year1995.head()
+sb.distplot(year1995["Regular Gross Paid"],fit=norm, kde=False)
+year1995["Regular Gross Paid"].mean()
+
+
 
 
