@@ -75,7 +75,8 @@ Let's see how the pay is distributed based on years of experience!
 ![basewithgross2017](https://user-images.githubusercontent.com/23710841/37250002-891910b0-24c0-11e8-9b0f-fc06a9344cf4.png)
 ## Teachers in their first year of work don't seem to make much!
 ![teachersfirstyear](https://user-images.githubusercontent.com/23710841/37250029-1c17640c-24c1-11e8-9b57-fb939bc52477.png)
-## Teacher with 
+## Teachers with 17 years experience make on average $84,482 (USD)!
+
 
 ## What I Learned?
 - My intuition lead me to think otherwise of what the data showed.
