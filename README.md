@@ -62,8 +62,8 @@ I was able to fix my variable. So now I can look deeper into each job title such
 - My subset: Employees paid annually, data registered in 2017, with starting work dates from 2000 to 2017.  
 ## Analyzing Teacher Data!
 Let's see how the pay is distributed based on years of experience!
-![teacherbase](https://user-images.githubusercontent.com/23710841/37249735-f15f532e-24ba-11e8-99f8-691e3e7040de.png)
-![teachergross](https://user-images.githubusercontent.com/23710841/37249736-f16ba07a-24ba-11e8-95d3-296dd8a90436.png)
+![aabase](https://user-images.githubusercontent.com/23710841/37250325-10ca08dc-24c8-11e8-9252-5101c2b8d6d0.png)
+![aagros](https://user-images.githubusercontent.com/23710841/37250326-10d56966-24c8-11e8-83f4-66d7fd7a05fd.png)
 - One thing to note, in 2015 there was a huge increase in teachers who started working with 3430. However, due to the data not being accumulated enough for 2017 (we only have data of 149 teachers who started in 2017). We can note the discrepancy, because the mean base salary drastically drops, but if there was more data, it would be closer to how 2015 and 2016 look.
 ![numnum](https://user-images.githubusercontent.com/23710841/37249930-11f9a806-24bf-11e8-8030-a81edac8e4fa.png)
 # How do Variables relate to each other? 
