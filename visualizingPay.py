@@ -442,7 +442,7 @@ plt.show()
 sb.distplot(above2000[above2000["Start_Year"] == 2017]["Regular Gross Paid"],fit=norm, kde=False)
 
 ## 17 year experience Distribution plot
-sb.distplot(above2000[above2000["Start_Year"] == 2000]["Regular Gross Paid"],kde=False)
+sb.distplot(above2000[above2000["Start_Year"] == 2000]["Regular Gross Paid"],fit=norm,kde=False)
 
 ## Relationships between variables plots!
 # Does TOTAL OTHER PAY relate to Salary in 2016??  Let's check.
