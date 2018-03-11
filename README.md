@@ -66,7 +66,7 @@ Let's see how the pay is distributed based on years of experience!
 ![numnum](https://user-images.githubusercontent.com/23710841/37249930-11f9a806-24bf-11e8-8030-a81edac8e4fa.png)
 
 ## What I Learned?
-- My intuition was definitely not the best guide. Much of the data will surprise you!
+- My intuition lead me to think otherwise of what the data showed.
 - I learned a lot more about python
 - Visualizing data definitely gives the overall picture of what is hidden in just words and numbers. Sure you could do this in excel, but definitely not with the caliber that python offers.
 - Seeing negative salaries was shocking and salaries that were very small. It didn't trip me, I just knew that some people are hired as poll workers, or seasonally and may have salaries under 10,000, so most of my analysis was using a subset of the overall data to leave out all the "seasonal" or temporary workers hired and to get a better detail of true annual salaries.
