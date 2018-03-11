@@ -62,7 +62,7 @@ I was able to fix my variable. So now I can look deeper into each job title such
 Let's see how the pay is distributed based on years of experience!
 ![teacherbase](https://user-images.githubusercontent.com/23710841/37249735-f15f532e-24ba-11e8-99f8-691e3e7040de.png)
 ![teachergross](https://user-images.githubusercontent.com/23710841/37249736-f16ba07a-24ba-11e8-95d3-296dd8a90436.png)
-- One thing to note, in 2015 there was a huge increase in teachers who started working with 3430. However, due to the data not being accumulated enough for 2017 (we only have data of 149 teachers who started in 2017).
+- One thing to note, in 2015 there was a huge increase in teachers who started working with 3430. However, due to the data not being accumulated enough for 2017 (we only have data of 149 teachers who started in 2017). We can note the discrepancy, because the mean base salary drastically drops, but if there was more data, it would be closer to how 2015 and 2016 look.
 ![numnum](https://user-images.githubusercontent.com/23710841/37249930-11f9a806-24bf-11e8-8030-a81edac8e4fa.png)
 
 ## What I Learned?
