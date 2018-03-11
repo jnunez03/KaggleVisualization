@@ -57,7 +57,7 @@ None of these plots look like they would go through the origin if they were stra
 This leads me to study the other variables: Total OT paid - Total Other Pay! Studying further we can see if this "other pay" is what is causing the skewness. However, doing a QQplot of base salary the same skewness still appears which shows me this is not due to the OT paid and Total other pay. Also, this just confirms the right skewness that is visible in the histograms above.
 __________________________________________________________________________________________________________________
 # UPDATE 1.0! (3/10/2018) Fixed Variable!
-I was able to fix my variable. So now I can look deeper into each job title such as teachers, firefighters, etc and do further analysis. I could check for difference in pay vs experience working as well as distributions of pay for specific job titles, etc..
+I was able to fix my variable. So now I can look deeper into each job title such as teachers, firefighters, police, etc., and do further analysis. I could check for difference in pay vs experience working as well as distributions of pay for specific job titles, etc..
 ## Analyzing Teacher Data!
 Let's see how the pay is distributed based on years of experience!
 ![teacherbase](https://user-images.githubusercontent.com/23710841/37249735-f15f532e-24ba-11e8-99f8-691e3e7040de.png)
