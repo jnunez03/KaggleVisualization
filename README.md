@@ -77,7 +77,8 @@ Let's see how the pay is distributed based on years of experience!
 ![teachersfirstyear](https://user-images.githubusercontent.com/23710841/37250029-1c17640c-24c1-11e8-9b57-fb939bc52477.png)
 ## Teachers with 17 years experience make on average $84,482 (USD)!
 ![teacherwith17yearexp11](https://user-images.githubusercontent.com/23710841/37250050-b3548354-24c1-11e8-8cf8-073439c06a53.png)
-
+## 22 Years of Experience? (Average is $90263)!
+![teachers1995_exp](https://user-images.githubusercontent.com/23710841/37250158-1acf9738-24c4-11e8-8332-db9944fa164f.png)
 ## What I Learned?
 - My intuition lead me to think otherwise of what the data showed.
 - I learned a lot more about python
