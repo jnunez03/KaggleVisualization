@@ -8,6 +8,7 @@ import statsmodels.api as sm
 from matplotlib.ticker import MaxNLocator
 from matplotlib.font_manager import FontProperties
 from scipy import stats
+from scipy.stats import norm
 
 plt.style.use('fivethirtyeight')
 
