@@ -64,6 +64,15 @@ Let's see how the pay is distributed based on years of experience!
 ![teachergross](https://user-images.githubusercontent.com/23710841/37249736-f16ba07a-24ba-11e8-95d3-296dd8a90436.png)
 - One thing to note, in 2015 there was a huge increase in teachers who started working with 3430. However, due to the data not being accumulated enough for 2017 (we only have data of 149 teachers who started in 2017). We can note the discrepancy, because the mean base salary drastically drops, but if there was more data, it would be closer to how 2015 and 2016 look.
 ![numnum](https://user-images.githubusercontent.com/23710841/37249930-11f9a806-24bf-11e8-8030-a81edac8e4fa.png)
+# How do Variables relate to each other? 
+## There seems to be no relationship with total other pay and how much you make!
+![basewtotalotherpay2016](https://user-images.githubusercontent.com/23710841/37249991-57d1eb12-24c0-11e8-830d-e285d3d20b2b.png)
+![grosswtotalotherpay2016](https://user-images.githubusercontent.com/23710841/37249992-57df5e32-24c0-11e8-95b1-55fbff4e189e.png)
+## In 2016, there does seem to be a relation with your base salary and gross salary! So we could ultimately predict how much someone will end up making by the end of the year based on their Base Salary.
+![basewithgross2016](https://user-images.githubusercontent.com/23710841/37249999-6e79ce5c-24c0-11e8-8099-8c20b0dcf383.png)
+
+## Base Vs. Gross Pay For 2017 (n=149, smaller than 2016 sample size)
+![basewithgross2017](https://user-images.githubusercontent.com/23710841/37250002-891910b0-24c0-11e8-9b0f-fc06a9344cf4.png)
 
 ## What I Learned?
 - My intuition lead me to think otherwise of what the data showed.
