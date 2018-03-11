@@ -362,8 +362,8 @@ dots = fig.findobj(lambda x: hasattr(x, 'get_color') and x.get_color() == 'b')
 
 ###          - ** -               CODE FOR   UPDATE 1.0.   MARCH 10, 2018        - ** -                ### 
 
-
-## """   TEACHER ANALYSIS """ ## 
+   
+## """          TEACHER ANALYSIS          """     ## 
 
 # CLEAN VARIABLE FIRST !
 df["Title Description"] = df["Title Description"].astype(str)
@@ -467,6 +467,6 @@ year1995.head()
 sb.distplot(year1995["Regular Gross Paid"],fit=norm, kde=False)
 year1995["Regular Gross Paid"].mean()
 
-
+""" END OF TEACHER ANALYSIS """
 
 
