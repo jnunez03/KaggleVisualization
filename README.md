@@ -70,5 +70,9 @@ This leads me to study the other variables: Total OT paid - Total Other Pay! Stu
 __________________________________________________________________________________________________________________
 # UPDATE 1.0! (3/10/2018)
 I was able to fix my variable. So now I can look deeper into each job title such as teachers, firefighters, etc and do further analysis. I could check for difference in pay vs experience working as well as distributions of pay for specific job titles, etc..
+## Analyzing Teacher Data!
+
+
+
 
 ###### Data from [Kaggle](https://www.kaggle.com/competitions)
