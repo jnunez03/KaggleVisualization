@@ -71,6 +71,9 @@ ________________________________________________________________________________
 # UPDATE 1.0! (3/10/2018)
 I was able to fix my variable. So now I can look deeper into each job title such as teachers, firefighters, etc and do further analysis. I could check for difference in pay vs experience working as well as distributions of pay for specific job titles, etc..
 ## Analyzing Teacher Data!
+Let's see how the pay is distributed based on years of experience!
+![teacherbase](https://user-images.githubusercontent.com/23710841/37249735-f15f532e-24ba-11e8-99f8-691e3e7040de.png)
+![teachergross](https://user-images.githubusercontent.com/23710841/37249736-f16ba07a-24ba-11e8-95d3-296dd8a90436.png)
 
 
 
