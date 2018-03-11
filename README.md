@@ -55,26 +55,22 @@ easily seeing them side by side and the bold color helps notice the bars and you
 None of these plots look like they would go through the origin if they were straight lines. However, even when following a normal distribution, a qq-plot is almost never near perfect. What is displayed in the curve-ish like form away from the quantile line is an indicator of skewed data and data with heavy tails (kurtosis). These in particular look like they fall under a chi-squared distribution or a student t-distribution. However, in this case it is normal, but possesses a right skew! 
 ## There is some skewness in our Gross Paid data. 
 This leads me to study the other variables: Total OT paid - Total Other Pay! Studying further we can see if this "other pay" is what is causing the skewness. However, doing a QQplot of base salary the same skewness still appears which shows me this is not due to the OT paid and Total other pay. Also, this just confirms the right skewness that is visible in the histograms above.
-
-## What I Learned?
-- My intuition was definitely not the best guide. Much of the data will surprise you!
-- Data can be very difficult to work with. One of the variables was cleaned, but did not behave as a normal string type and I could not work with it fully. This dataset was very messy. A lot of things I refrained from doing (being short on time), so I worked with what I believed were results that would want to be seen, instead of being super nitpicky. I leave my nitpickiness for another data set.
-- I learned a lot more about python
-- Visualizing data definitely gives the overall picture of what is hidden in just words and numbers. Sure you could do this in excel, but definitely not with the caliber that python offers.
-- Seeing negative salaries was shocking and salaries that were very small. It didn't trip me, I just knew that some people are hired as poll workers, or seasonally and may have salaries under 10,000, so most of my analysis was using a subset of the overall data to leave out all the "seasonal" or temporary workers hired and to get a better detail of true annual salaries.
-## What I would have loved to do?  (Better Stated: What I will try to add at a later date. The analytics in me will push me!)
-- I would have liked to done more with distributions and maybe implement some machine learning just to play with it. But I will leave that for another day. Time was of the essence (sorry for the cliche).
-- Also, I would have liked to add a visual with the actual state of New York and color code by county the amount of employess/salary. Note that there were counties outside of NY in this dataset, due to the fact that people work remotely.
-- I would have loved to figure out a way to fix one of my variables that just did not want to work as a string type so even a line of code like this ```'TEACHER' in df["Title Description"] ``` did not work and Teacher was inside of the data, just not "readable", despite me trying to strip whitespace, non-alpha characters, and casting it to string type. I will look more into this!
-
 __________________________________________________________________________________________________________________
-# UPDATE 1.0! (3/10/2018)
+# UPDATE 1.0! (3/10/2018) Fixed Variable!
 I was able to fix my variable. So now I can look deeper into each job title such as teachers, firefighters, etc and do further analysis. I could check for difference in pay vs experience working as well as distributions of pay for specific job titles, etc..
 ## Analyzing Teacher Data!
 Let's see how the pay is distributed based on years of experience!
 ![teacherbase](https://user-images.githubusercontent.com/23710841/37249735-f15f532e-24ba-11e8-99f8-691e3e7040de.png)
 ![teachergross](https://user-images.githubusercontent.com/23710841/37249736-f16ba07a-24ba-11e8-95d3-296dd8a90436.png)
 
+## What I Learned?
+- My intuition was definitely not the best guide. Much of the data will surprise you!
+- I learned a lot more about python
+- Visualizing data definitely gives the overall picture of what is hidden in just words and numbers. Sure you could do this in excel, but definitely not with the caliber that python offers.
+- Seeing negative salaries was shocking and salaries that were very small. It didn't trip me, I just knew that some people are hired as poll workers, or seasonally and may have salaries under 10,000, so most of my analysis was using a subset of the overall data to leave out all the "seasonal" or temporary workers hired and to get a better detail of true annual salaries.
+## What I would have loved to do?  (Better Stated: What I will try to add at a later date. The analytics in me will push me!)
+- I would have liked to done more with distributions and maybe implement some machine learning just to play with it. But I will leave that for another day. Time was of the essence (sorry for the cliche).
+- Also, I would have liked to add a visual with the actual state of New York and color code by county the amount of employess/salary. Note that there were counties outside of NY in this dataset, due to the fact that people work remotely.
 
 
 
