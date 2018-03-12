@@ -423,6 +423,17 @@ plt.yticks(range(35000,140000,10000), fontsize=13, weight= 'bold')
 plt.xticks(fontsize=16, weight= 'bold')
 ax.set_title("Boxplot Distribution of Base Salary (USD) for Year Started Working", weight='bold')
 
+# SEABORN BOXPLOT TEACHER! GROSS
+ax1=plt.axes()
+sb.boxplot(x=above2000["Start_Year"],
+           y=above2000["Regular Gross Paid"], data=above2000, palette='hls',ax=ax1)
+plt.yticks(fontsize=11.0, weight='bold',color='black')
+plt.ylabel('$   ', fontsize=23, rotation=0, weight='bold')
+plt.xlabel('\n Year Started Working',fontsize=18, weight='bold')
+plt.yticks(range(5000,200000,25000), fontsize=13, weight= 'bold')
+plt.xticks(fontsize=16, weight= 'bold')
+ax1.set_title("Boxplot Distribution of Base Salary (USD) for Year Started Working", weight='bold')
+
 
 ## GROSS PAY Mean/Median PAY FOR TEACHERS YEAR 2000 - 2017
 above2000.groupby(["Start_Year"])["Regular Gross Paid"].mean().plot(linewidth=2.25)
