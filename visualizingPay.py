@@ -469,7 +469,10 @@ sb.jointplot(x="Base Salary",y="Total Other Pay",data=b)
 sb.jointplot(x="Base Salary",y="Regular Gross Paid",data=b)
 
 # HOW ABOUT 2017
+rcParams['figure.figsize'] = 12,9
 cc = above2000[above2000["Start_Year"] == 2017]
+sb.distplot(cc["Base Salary"],fit=norm,kde=False) # BASE PAY HISTOGRAM
+
 sb.jointplot(x="Regular Gross Paid",y="Total Other Pay",data=cc)
 sb.jointplot(x="Base Salary",y="Total Other Pay",data=cc)
 sb.jointplot(x="Base Salary",y="Regular Gross Paid",data=cc)
