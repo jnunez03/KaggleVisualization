@@ -90,7 +90,8 @@ Let's see how the pay is distributed based on years of experience!
 ### This is Base Pay BTW! (Which differs largely from Gross Pay!)
 ![teacherboxplot](https://user-images.githubusercontent.com/23710841/37265980-8a45ea8a-258d-11e8-8bbd-44208c66813a.png)
 ### Gross Pay (I did not try to fix it, just so you could see the outliers and the huge differences between Base Pay)
-![teachergrossboxplot](https://user-images.githubusercontent.com/23710841/37266472-ad5c5e98-2590-11e8-9566-dc5366636a3d.png)
+![teachergrosshisto](https://user-images.githubusercontent.com/23710841/37266521-0066bb38-2591-11e8-8f1b-db9f8b190bd5.png)
+
 ## What I Learned?
 - My intuition lead me to think otherwise of what the data showed.
 - I learned a lot more about python
