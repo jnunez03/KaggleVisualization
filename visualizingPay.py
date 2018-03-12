@@ -432,7 +432,7 @@ plt.ylabel('$   ', fontsize=23, rotation=0, weight='bold')
 plt.xlabel('\n Year Started Working',fontsize=18, weight='bold')
 plt.yticks(range(5000,200000,25000), fontsize=13, weight= 'bold')
 plt.xticks(fontsize=16, weight= 'bold')
-ax1.set_title("Boxplot Distribution of Base Salary (USD) for Year Started Working", weight='bold')
+ax1.set_title("Boxplot Distribution of Gross Salary (USD) for Year Started Working", weight='bold')
 
 
 ## GROSS PAY Mean/Median PAY FOR TEACHERS YEAR 2000 - 2017
