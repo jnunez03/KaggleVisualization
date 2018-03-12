@@ -78,6 +78,7 @@ df["Start_Year"] = df["Start_Year"].astype(int)
 df.head()
 
 
+
 # BOXPLOT FOR GENERAL BASE PAY
 df.columns
 ax8=plt.axes()
@@ -94,7 +95,17 @@ plt.xlabel('\n Year Started Working',fontsize=18, weight='bold')
 #plt.yticks(range(10000,200000,10000), fontsize=13, weight= 'bold')
 plt.xticks(fontsize=16, weight= 'bold')
 ax8.set_title("Boxplot Distribution of Base Salary (USD) for Year Started Working Across All Occupations", weight='bold')
-#   
+# 
+# TOP 8 Average Paid Jobs Plot
+rcParams['figure.figsize'] = 12,8
+nof.groupby("job_title")["Base Salary"].mean().sort_values(ascending=False)[:8].plot(kind='barh')
+plt.ylabel('', fontsize=23, rotation=0, weight='bold')
+plt.xlabel(' \n $ (USD) ',fontsize=18, weight='bold')
+plt.yticks(fontsize=13, weight= 'bold')
+plt.xticks(fontsize=16, weight= 'bold')   
+plt.text(x=0,y=8.1, s="Top 8 Average Paid Job Titles",weight='bold',fontsize=25)
+##
+
 
               
 # Most Pay Based On Work Title   - -  - -  -  - -  - -                
