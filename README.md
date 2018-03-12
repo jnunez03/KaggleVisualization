@@ -82,6 +82,8 @@ Let's see how the pay is distributed based on years of experience!
 ![teacherwith17yearexp11](https://user-images.githubusercontent.com/23710841/37250050-b3548354-24c1-11e8-8cf8-073439c06a53.png)
 ## 22 Years of Experience? (Average is $90,263)!
 ![teachers1995_exp](https://user-images.githubusercontent.com/23710841/37250158-1acf9738-24c4-11e8-8332-db9944fa164f.png)
+## To top it off, here are Boxplot Pay distributions based on the "YEAR" a teacher started working for registered teachers in 2017.
+![teacherboxplots](https://user-images.githubusercontent.com/23710841/37265828-7018f50e-258c-11e8-96ef-198bfbe2da2c.png)
 ## What I Learned?
 - My intuition lead me to think otherwise of what the data showed.
 - I learned a lot more about python
