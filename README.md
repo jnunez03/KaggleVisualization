@@ -71,7 +71,7 @@ Let's see how the pay is distributed based on years of experience!
 ## There seems to be no relationship with total other pay and how much you make!
 ![basewtotalotherpay2016](https://user-images.githubusercontent.com/23710841/37249991-57d1eb12-24c0-11e8-830d-e285d3d20b2b.png)
 ![grosswtotalotherpay2016](https://user-images.githubusercontent.com/23710841/37249992-57df5e32-24c0-11e8-95b1-55fbff4e189e.png)
-## In 2016, there does seem to be a relation with your base salary and gross salary! So we could ultimately predict how much someone will end up making by the end of the year based on their Base Salary.
+## In 2016, there does seem to be a relation with your base salary and gross salary! So we could ultimately predict how much someone will end up making by the end of the year based on their Base Salary.(Yes, seems obvious, I know, but still fun.)
 ![basewithgross2016](https://user-images.githubusercontent.com/23710841/37249999-6e79ce5c-24c0-11e8-8099-8c20b0dcf383.png)
 
 ## Base Vs. Gross Pay For 2017 (n=149, smaller than 2016 sample size)
