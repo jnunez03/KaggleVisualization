@@ -406,7 +406,23 @@ teacher4["Start_Year"] = teacher4["Start_Year"].astype(int)
 # Get rid of year 1999 and only look at employees with starting dates of 2000 to 2017!
 above2000  = teacher4[(teacher4["Start_Year"] >= 2000) & (teacher4["Start_Year"]< 9000)]
 
+
+
+
 # PLOTS  --- 
+from pylab import rcParams
+rcParams['figure.figsize'] = 20,15
+# SEABORN BOXPLOT PAY DISTRIBUTIONS FOR  TEACHERS!
+ax=plt.axes()
+sb.boxplot(x=above2000["Start_Year"],
+           y=above2000["Base Salary"], data=above2000, palette='hls',ax=ax)
+plt.yticks(fontsize=11.0, weight='bold',color='black')
+plt.ylabel('$   ', fontsize=23, rotation=0, weight='bold')
+plt.xlabel('\n Year Started Working',fontsize=18, weight='bold')
+plt.yticks(range(35000,140000,10000), fontsize=13, weight= 'bold')
+plt.xticks(fontsize=16, weight= 'bold')
+ax.set_title("Boxplot Distribution of Base Salary (USD) for Year Started Working", weight='bold')
+
 
 ## GROSS PAY Mean/Median PAY FOR TEACHERS YEAR 2000 - 2017
 above2000.groupby(["Start_Year"])["Regular Gross Paid"].mean().plot(linewidth=2.25)
