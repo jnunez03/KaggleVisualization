@@ -77,12 +77,17 @@ Let's see how the pay is distributed based on years of experience!
 ## Base Vs. Gross Pay For 2017 (n=149, smaller than 2016 sample size)
 ![basewithgross2017](https://user-images.githubusercontent.com/23710841/37250002-891910b0-24c0-11e8-9b0f-fc06a9344cf4.png)
 ## Teachers in their first year of work don't seem to make much!
+- Gross Pay 
 ![teachersfirstyear](https://user-images.githubusercontent.com/23710841/37250029-1c17640c-24c1-11e8-9b57-fb939bc52477.png)
+- Base Pay   (Large discrepancy with Gross Pay!)
+![2017basesalary_histogram](https://user-images.githubusercontent.com/23710841/37266232-453d90c6-258f-11e8-9d1e-a3c52ae30996.png)
+
 ## Teachers with 17 years experience make on average $84,482 (USD)!
 ![teacherwith17yearexp11](https://user-images.githubusercontent.com/23710841/37250050-b3548354-24c1-11e8-8cf8-073439c06a53.png)
 ## 22 Years of Experience? (Average is $90,263)!
 ![teachers1995_exp](https://user-images.githubusercontent.com/23710841/37250158-1acf9738-24c4-11e8-8332-db9944fa164f.png)
 ## To top it off, here are Boxplot Pay distributions based on the "YEAR" a teacher started working for registered teachers in 2017.
+- This is Base Pay BTW! (Which differs largely from Gross Pay!)
 ![teacherboxplot](https://user-images.githubusercontent.com/23710841/37265980-8a45ea8a-258d-11e8-8bbd-44208c66813a.png)
 
 ## What I Learned?
