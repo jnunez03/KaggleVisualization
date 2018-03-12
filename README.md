@@ -77,9 +77,9 @@ Let's see how the pay is distributed based on years of experience!
 ## Base Vs. Gross Pay For 2017 (n=149, smaller than 2016 sample size)
 ![basewithgross2017](https://user-images.githubusercontent.com/23710841/37250002-891910b0-24c0-11e8-9b0f-fc06a9344cf4.png)
 ## Teachers in their first year of work don't seem to make much!
-- Gross Pay 
+#### Gross Pay 
 ![teachersfirstyear](https://user-images.githubusercontent.com/23710841/37250029-1c17640c-24c1-11e8-9b57-fb939bc52477.png)
-- Base Pay   (Large discrepancy with Gross Pay!)
+#### Base Pay   (Large discrepancy with Gross Pay!)
 ![2017basesalary_histogram](https://user-images.githubusercontent.com/23710841/37266232-453d90c6-258f-11e8-9d1e-a3c52ae30996.png)
 
 ## Teachers with 17 years experience make on average $84,482 (USD)!
