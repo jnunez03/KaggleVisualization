@@ -67,10 +67,34 @@ df["Title Description"] = df["Title Description"].astype(str)
 df["Title Description"] = df["Title Description"].str.strip()
 # Gets rid of Non-Alpha Characters in this column
 df["Title Description"]= df["Title Description"].str.replace('[^A-Za-z\s]+', '')
+df["Title Description"] = df["Title Description"].str.lstrip()
+df["Title Description"] = df["Title Description"].str.lower()
 
-'TEACHER' in df["Title Description"] # Doesn't seem to read the string.
-#"CHIEF ACTUARY" in df["Title Description"]
-               
+'
+
+df["job_title"] = df["Title Description"].str.extract('([a-zA-Z ]+)', expand=False).str.strip().str.lstrip()  
+df["Start_Year"] = df["Agency Start Date"].str[6:10]
+df["Start_Year"] = df["Start_Year"].astype(int)
+df.head()
+
+
+# BOXPLOT FOR GENERAL BASE PAY
+df.columns
+ax8=plt.axes()
+# Subset taken of years 2000 to 2017, paid annually, with base and gross above 10,000.
+nof = df[(df["Start_Year"] >= 2000) & (df["Start_Year"]< 2018) & (df["Pay Basis"] == "per Annum") &(df["Regular Gross Paid"] > 10000) & (df["Base Salary"] > 10000)]
+nof["Start_Year"].value_counts()
+nof["Base Salary"]
+nof.head()
+sb.boxplot(x=nof["Start_Year"],
+           y=nof["Base Salary"], data=nof, palette='hls',ax=ax8)
+plt.yticks(fontsize=11.0, weight='bold',color='black')
+plt.ylabel('$   ', fontsize=23, rotation=0, weight='bold')
+plt.xlabel('\n Year Started Working',fontsize=18, weight='bold')
+#plt.yticks(range(10000,200000,10000), fontsize=13, weight= 'bold')
+plt.xticks(fontsize=16, weight= 'bold')
+ax8.set_title("Boxplot Distribution of Base Salary (USD) for Year Started Working Across All Occupations", weight='bold')
+#   
 
               
 # Most Pay Based On Work Title   - -  - -  -  - -  - -                
