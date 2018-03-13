@@ -107,6 +107,51 @@ plt.text(x=0,y=8.1, s="Top 8 Average Paid Job Titles",weight='bold',fontsize=25)
 ##
 
 
+######  ---   (3/13/18)    New  - Job Analysis Boxplot for Occupations with the Most Employees!!     --       ########
+
+df["job_title"].value_counts()
+sub1 = df[(df["Pay Basis"] == "per Annum") & (df["Fiscal Year"] >= 2000) & (df["Fiscal Year"] <= 2017)]
+sub1["job_title"].value_counts().index
+sub1.head()
+
+# Merge Teacher job titles into 1 category!
+diction = {'teacher special education':'teacher'}
+sub1['job_title'] = sub1.job_title.replace(diction)
+
+# get all values that are not NULL !
+sub1 = sub1[~sub1.job_title.isnull()]
+
+# to check if nulls went away
+sub1.isnull().sum()
+
+# Top 20 job titles with most employees registered on annual pay from 2000 to 2017!
+sub_dict = set(sub1["job_title"].value_counts().index[:20]) # store the top 20
+
+sub_dict_containing = sub1[sub1['job_title'].isin(sub_dict)].copy() # find them in DF and Copy
+
+sub_dict_containing.head()
+# data for boxplots.
+
+# Get index and values.  .. Set them to variables
+x0 = sub_dict_containing["job_title"]
+y0 = sub_dict_containing[sub_dict_containing["Regular Gross Paid"] > 5000]["Regular Gross Paid"]
+
+rcParams['figure.figsize'] = 26,20
+        
+axx = plt.axes()
+sb.boxplot(x=x0,y=y0, data=sub_dict_containing, palette='husl',ax=axx)
+axx.set_xticklabels(axx.get_xticklabels(),rotation =40, ha="right") #fontname='Calibri'
+#sb.set_context("poster")
+plt.ylabel('Gross Pay                             ', fontsize=20, rotation=0, weight='bold')
+plt.xlabel('Occupation',fontsize=25, weight='bold')
+plt.yticks(range(0,450000,30000),fontsize=19.0, weight='bold',color='black')
+plt.xticks(fontsize=18.3, weight='bold',color='black')
+#plt.show()
+axx.set_title("Gross Pay Distribution Based on Occupations with The Most Employees",fontsize=37, weight='bold')
+plt.text(x=1.78, y=500000, s="Annual Paid Employees From Years 2000 to 2017", fontsize=14, weight='bold',alpha=.74)
+
+# ------ #  ------ # - ----- # ----- # ------ # ----- #
+
               
 # Most Pay Based On Work Title   - -  - -  -  - -  - -                
 x = df[(df["Pay Basis"] == "per Annum") & (df["Regular Gross Paid"] > 10000) & (df["Base Salary"] > 10000)]
