@@ -74,9 +74,6 @@ This leads me to study the other variables: Total OT paid - Total Other Pay! Stu
 - You can also note which jobs have employees that are paid way above the normal pay and there are many jobs where all employees are paid within the IQR (Inter-Quartile Range) and display no outliers at all. 
 - You can also note there are employees that are paid below the 25th percentile, which could be due to lack of experience and/or a host of other reasons.
 __________________________________________________________________________________________________________________
-# UPDATE 1.0! (3/10/2018) Fixed Variable!
-- I was able to correctly clean one of the variables in my data frame, so now I can look deeper into each job title such as teachers, firefighters, police, etc., and do further analysis. I could check for difference in pay vs experience working as well as distributions of pay for specific job titles, etc.
-- One question I will look into is which occupation has the best pay increase as experience level increases (Coming Soon!).
 ## How I took a subset of the data...
 - My subset: Employees paid annually, data registered in 2017, with starting work dates from 2000 to 2017 (17 years of experience to 1 year of experience). 
 ## Analyzing Teacher Data!
