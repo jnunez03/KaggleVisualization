@@ -3,7 +3,7 @@ Data can be found [here](https://www.kaggle.com/new-york-city/nyc-citywide-payro
 
 The data isn't anything special, but it offers a lot of cleaning and discerning! I had fun with it and learned a lot along the way. Also, you may know, kaggle has a lot of datasets and the popular ones have many input from other analysts and really great programmers, so I wanted to choose a dataset that could really show I didn't just "copy/paste" code and I think there was only 2 people who analyzed this data, but one of them used R and the other barely did any analysis. So I went and chose NYC Payroll as my project. Everything shown was inspired by me and all my decision making/questioning. I wanted to use my own fresh approach to this data set.
 
-- note: Clicking on graphs that may be hard to read will help make them more clear as it opens it in a new tab in most cases or just brings it in a kind of zoom and it becomes more clear.
+- Note: Clicking on graphs that may be hard to read will help make them more clear as it opens it in a new tab in most cases or just brings it in a kind of zoom and it becomes more clear.
 ###### Code can be found in .py file above!!
 
 # Here is what I Found! 
