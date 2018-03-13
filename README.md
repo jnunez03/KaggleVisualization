@@ -69,7 +69,8 @@ This leads me to study the other variables: Total OT paid - Total Other Pay! Stu
 - Only 1 of the variables is indecipherable. If anyone wants to take a shot at figuring it out, please let me know!
 - I chose the axis in a way where outliers can be visible. Obviously, it takes away from the aesthetics and is likely unncessary, but this is for observational purposes!
 - (In reality, those dots way outside are outliers and don't need to be shown. There is a technique to calculate outliers beforehand and remove them from the plot)
-- You can also note which jobs have employees that are paid way above the normal pay and there are many jobs where all employees are within the IQR and display no outliers at all. 
+- You can also note which jobs have employees that are paid way above the normal pay and there are many jobs where all employees are paid within the IQR (Inter-Quartile Range) and display no outliers at all. 
+- You can also note there are employees that are paid below the 25th percentile, which could be due to lack of experience and a host of other causes.
 __________________________________________________________________________________________________________________
 # UPDATE 1.0! (3/10/2018) Fixed Variable!
 - I was able to correctly clean one of the variables in my data frame, so now I can look deeper into each job title such as teachers, firefighters, police, etc., and do further analysis. I could check for difference in pay vs experience working as well as distributions of pay for specific job titles, etc.
