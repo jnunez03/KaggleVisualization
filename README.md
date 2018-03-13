@@ -67,6 +67,8 @@ This leads me to study the other variables: Total OT paid - Total Other Pay! Stu
 ![alljobs3 0](https://user-images.githubusercontent.com/23710841/37370693-5f26cc82-26e3-11e8-8569-6bf4ad25a059.png)
 - note: clicking on the actual graph will make viewing it more clear!
 - Only 1 of the variables is indecipherable. If anyone wants to take a shot at figuring it out, please let me know!
+- I chose the axis in a way where outliers can be visible. Obviously, it takes away from the aesthetics and is likely unncessary, but this is for observational purposes!
+- (In reality, those dots way outside are outliers and don't need to be shown. There is a technique to calculate outliers beforehand and remove them from the plot)
 __________________________________________________________________________________________________________________
 # UPDATE 1.0! (3/10/2018) Fixed Variable!
 - I was able to correctly clean one of the variables in my data frame, so now I can look deeper into each job title such as teachers, firefighters, police, etc., and do further analysis. I could check for difference in pay vs experience working as well as distributions of pay for specific job titles, etc.
