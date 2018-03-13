@@ -3,9 +3,11 @@ Data can be found [here](https://www.kaggle.com/new-york-city/nyc-citywide-payro
 
 The data isn't anything special, but it offers a lot of cleaning and discerning! I had fun with it and learned a lot along the way. Also, you may know, kaggle has a lot of datasets and the popular ones have many input from other analysts and really great programmers, so I wanted to choose a dataset that could really show I didn't just "copy/paste" code and I think there was only 2 people who analyzed this data, but one of them used R and the other barely did any analysis. So I went and chose NYC Payroll as my project. Everything shown was inspired by me and all my decision making/questioning. I wanted to use my own fresh approach to this data set.
 
-# Here is what I Found! 
+- note: Clicking on graphs that may be hard to read will help make them more clear as it opens it in a new tab in most cases or just brings it in a kind of zoom and it becomes more clear.
 ###### Code can be found in .py file above!!
-## Here is a breakdown of the most employees by Agency per year. 
+
+# Here is what I Found! 
+## Breakdown of the most employees by Agency per year. 
 I chose to use this style of graph that way you can see any discrepancies
 easily seeing them side by side and the bold color helps notice the bars and you could see the difference in the heights per year. One thing to note is the size of "Police Department" is different between the years due to the name not being a unique value in the data set. Another thing is there are a lot of different departments and could be categorized based on context, for example, "Education", etc., and these could be merged into 1 category. For instance, colleges could be merged instead of having "Hostos CC, Laguardia CC, etc." as separate index rows. I also couldn't do further analysis on individual "work titles" like distribution of pay between teachers and fire-fighters, because that was the variable that was giving me much trouble and I couldn't figure out how to fix it.
 ![Data](https://user-images.githubusercontent.com/23710841/37132894-3c34f71e-225e-11e8-81b9-f24a0542c03b.png)
@@ -63,7 +65,7 @@ This leads me to study the other variables: Total OT paid - Total Other Pay! Stu
 
 ## I chose to look at the "jobs with the most employees"(most common jobs) and find the distribution of gross pay! 
 ![alljobs3 0](https://user-images.githubusercontent.com/23710841/37370693-5f26cc82-26e3-11e8-8569-6bf4ad25a059.png)
-
+- note: clicking on the actual graph will make viewing it more clear!
 __________________________________________________________________________________________________________________
 # UPDATE 1.0! (3/10/2018) Fixed Variable!
 - I was able to correctly clean one of the variables in my data frame, so now I can look deeper into each job title such as teachers, firefighters, police, etc., and do further analysis. I could check for difference in pay vs experience working as well as distributions of pay for specific job titles, etc.
