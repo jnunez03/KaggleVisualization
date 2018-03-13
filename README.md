@@ -3,7 +3,7 @@ Data can be found [here](https://www.kaggle.com/new-york-city/nyc-citywide-payro
 
 The data isn't anything special, but it offers a lot of cleaning and discerning! I had fun with it and learned a lot along the way. Also, you may know, kaggle has a lot of datasets and the popular ones have many input from other analysts and really great programmers, so I wanted to choose a dataset that could really show I didn't just "copy/paste" code and I think there was only 2 people who analyzed this data, but one of them used R and the other barely did any analysis. So I went and chose NYC Payroll as my project. Everything shown was inspired by me and all my decision making/questioning. I wanted to use my own fresh approach to this data set.
 
-- Note 1: I will try an reproduce this in Blog Format and/or Jupyter notebook, so stay tuned for that!
+- Note 1: I will try an reproduce this in blog format and/or jupyter notebook, so stay tuned for that!
 
 - Note 2: Clicking on graphs that may be hard to read will help make them more clear as it opens it in a new tab in most cases or just brings it in a kind of zoom and it becomes more clear.
 ###### Code can be found in .py file above!!
@@ -69,7 +69,7 @@ This leads me to study the other variables: Total OT paid - Total Other Pay! Stu
 ![alljobs3 0](https://user-images.githubusercontent.com/23710841/37370693-5f26cc82-26e3-11e8-8569-6bf4ad25a059.png)
 - note: clicking on the actual graph will make viewing it more clear!
 - Only 1 of the variables is indecipherable. If anyone wants to take a shot at figuring it out, please let me know!
-- I chose the axis in a way where outliers can be visible. Obviously, it takes away from the aesthetics and is likely unncessary, but this is for observational purposes!
+- I chose the axis in a way where outliers can be visible. Obviously, it takes away from the aesthetics and is likely unnecessary, but this is for observational purposes!
 - (In reality, those dots way outside are outliers and don't need to be shown. There is a technique to calculate outliers beforehand and remove them from the plot)
 - You can also note which jobs have employees that are paid way above the normal pay and there are many jobs where all employees are paid within the IQR (Inter-Quartile Range) and display no outliers at all. 
 - You can also note there are employees that are paid below the 25th percentile, which could be due to lack of experience and/or a host of other reasons.
