@@ -62,7 +62,7 @@ This leads me to study the other variables: Total OT paid - Total Other Pay! Stu
 ![boxplot_general](https://user-images.githubusercontent.com/23710841/37267124-b03edec0-2594-11e8-8b5c-6f3d70b77f9c.png)
 
 ## I chose to look at the jobs with the most employees and find the distribution of gross pay! 
-![alljobsboxplots](https://user-images.githubusercontent.com/23710841/37370386-6a07125c-26e2-11e8-81b1-68ccfce2abbe.png)
+![alljobs2](https://user-images.githubusercontent.com/23710841/37370543-f11eca00-26e2-11e8-8234-abaa767b6908.png)
 __________________________________________________________________________________________________________________
 # UPDATE 1.0! (3/10/2018) Fixed Variable!
 - I was able to correctly clean one of the variables in my data frame, so now I can look deeper into each job title such as teachers, firefighters, police, etc., and do further analysis. I could check for difference in pay vs experience working as well as distributions of pay for specific job titles, etc.
