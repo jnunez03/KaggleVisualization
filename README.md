@@ -42,7 +42,7 @@ easily seeing them side by side and the bold color helps notice the bars and you
 
 ## QQ Plots
 [The Q-Q plot, or quantile-quantile plot, is a graphical tool to help us assess if a set of data plausibly came from some theoretical distribution such as a Normal or exponential. ... A Q-Q plot is a scatterplot created by plotting two sets of quantiles against one another.](http://data.library.virginia.edu/understanding-q-q-plots/)
-- This tests if our data is truly "Normal"
+- This tests for normality in the data.
 ## 2014 QQplot of Gross Pay 
 ![2014](https://user-images.githubusercontent.com/23710841/37192663-bf769426-2334-11e8-8d30-de24921befea.png)
 ## 2015 QQplot of Gross Pay
