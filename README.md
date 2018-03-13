@@ -60,6 +60,9 @@ This leads me to study the other variables: Total OT paid - Total Other Pay! Stu
 ## In General, how does experience relate to base pay?
 #### Caveat, someone could be hired in each year with experience outside of NYC! This experience is not reflective of overall experience, but experience based on being a registered worker in NYC! For example, a random NYC worker who started working in 2006. In 2017, we could expect that persons salary to be somewhere around 50,000 to 80,000! However, there could be someone who comes in with more experience and could get paid $120,000, but will show up in the 2017 section of the plot, because he was never registered as a worker in NYC only until 2017. (I hope this explanation is clear. However there is a slight trend, where on average, more experience = more pay!)
 ![boxplot_general](https://user-images.githubusercontent.com/23710841/37267124-b03edec0-2594-11e8-8b5c-6f3d70b77f9c.png)
+
+## I chose to look at the jobs with the most employees and find the distribution of gross pay! 
+![alljobsboxplots](https://user-images.githubusercontent.com/23710841/37370386-6a07125c-26e2-11e8-81b1-68ccfce2abbe.png)
 __________________________________________________________________________________________________________________
 # UPDATE 1.0! (3/10/2018) Fixed Variable!
 - I was able to correctly clean one of the variables in my data frame, so now I can look deeper into each job title such as teachers, firefighters, police, etc., and do further analysis. I could check for difference in pay vs experience working as well as distributions of pay for specific job titles, etc.
