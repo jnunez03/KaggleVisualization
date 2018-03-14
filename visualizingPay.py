@@ -220,7 +220,8 @@ sb.jointplot("yearsOfexp", "Regular Gross Paid", data=newdata,stat_func=spearman
 rcParams['figure.figsize'] = 12,8
 sb.heatmap(newdata.corr()) # heatmap plot
 
-
+# Pairplot!
+sb.pairplot(newdata)
 #  - #   -  # - # - # - #
 # Most Pay Based On Work Title   - -  - -  -  - -  - -                
 x = df[(df["Pay Basis"] == "per Annum") & (df["Regular Gross Paid"] > 10000) & (df["Base Salary"] > 10000)]
