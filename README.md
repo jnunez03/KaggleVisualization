@@ -75,7 +75,7 @@ This leads me to study the other variables: Total OT paid - Total Other Pay! Stu
 - You can also note there are employees that are paid below the 25th percentile, which could be due to lack of experience and/or a host of other reasons.
 __________________________________________________________________________________________________________________
 ## How I took a subset of the data...
-- My subset: Employees paid annually, data registered in 2017, with starting work dates from 2000 to 2017 (17 years of experience to 1 year of experience). 
+- My subset: Employees paid annually, data registered in 2017, with starting work dates from 2000 to 2017 (~18 years of experience to ~1 year of experience). 
 ## Analyzing Teacher Data!
 Let's see how the pay is distributed based on years of experience!
 ![aabase](https://user-images.githubusercontent.com/23710841/37250325-10ca08dc-24c8-11e8-9252-5101c2b8d6d0.png)
@@ -97,9 +97,9 @@ Let's see how the pay is distributed based on years of experience!
 #### Base Pay   (Large discrepancy with Gross Pay!)
 ![2017basesalary_histogram](https://user-images.githubusercontent.com/23710841/37266232-453d90c6-258f-11e8-9d1e-a3c52ae30996.png)
 
-## Teachers with 17 years experience make on average $84,482 (USD)!
+## Teachers with ~18 years experience make on average $84,482 (USD)!
 ![teacherwith17yearexp11](https://user-images.githubusercontent.com/23710841/37250050-b3548354-24c1-11e8-8cf8-073439c06a53.png)
-## 22 Years of Experience? (Average is $90,263)!
+## ~22 Years of Experience? (Average is $90,263)!
 ![teachers1995_exp](https://user-images.githubusercontent.com/23710841/37250158-1acf9738-24c4-11e8-8332-db9944fa164f.png)
 ## To top it off, here are Boxplot Pay distributions based on the "YEAR" a teacher started working for registered teachers in 2017.
 ### This is Base Pay BTW! (Which differs largely from Gross Pay!)
