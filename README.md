@@ -69,7 +69,14 @@ This leads me to study the other variables: Total OT paid - Total Other Pay! Stu
 ![spearmanr](https://user-images.githubusercontent.com/23710841/37383752-1c02ca3a-2721-11e8-97af-716ed12a7a60.png)
 - The score is moderate. This is a statistical measure of monotonic relationship between data. So it has to be either increasing or decreasing when plotted against each other (can't be both in the same plot like a sine curve). 
 - This tells us there is some slight correlation between Gross Pay and Years of Experience. **Let's graph it!**
+### We see an obvious upward trend! 
+![yoe_gross_plot](https://user-images.githubusercontent.com/23710841/37426215-268724da-279c-11e8-9c96-fd495c4ba2a9.png)
+### This differs greatly from what Base Salary showed. Which shows Gross Salary is the true indicator of Pay Vs. Experience!
+![yoe_gross_boxplot](https://user-images.githubusercontent.com/23710841/37426214-26708978-279c-11e8-8b4b-ad01277f8e79.png)
 
+### Conclusion! 
+- When we looked above at Base Salary, we did not see a strong correlation between Base Salary and Years of Experience! The Boxplot only revealed a slight upward trend. When we took a look at Gross Salary, we saw a stronger trend (stronger correlation) which was denoted by the spearman rank test that had a value of .47 which is a moderate score. Across All Occupations, it is revealed the more experience you have the more money you will end up making, despite what your base salary value is! We know that there are other forms of payment such as bonuses, OT paid, stocks, bonds, etc. 
+# NEXT!
 ## I chose to look at the "jobs with the most employees"(most common jobs) and find the distribution of gross pay! 
 ![alljobs3 0](https://user-images.githubusercontent.com/23710841/37370693-5f26cc82-26e3-11e8-8569-6bf4ad25a059.png)
 - note: clicking on the actual graph will make viewing it more clear!
@@ -78,6 +85,7 @@ This leads me to study the other variables: Total OT paid - Total Other Pay! Stu
 - (In reality, those dots way outside are outliers and don't need to be shown. There is a technique to calculate outliers beforehand and remove them from the plot)
 - You can also note which jobs have employees that are paid way above the normal pay and there are many jobs where all employees are paid within the IQR (Inter-Quartile Range) and display no outliers at all. 
 - You can also note there are employees that are paid below the 25th percentile, which could be due to lack of experience and/or a host of other reasons.
+
 ## What Variable are related? Well besides the obvious, OT hours and OT paid are the only other most correlated variable (makes sense)!
 ### This is across all occupations for workers from 2000 to 2017, paid minimum of 20,000 annually
 ![heatmap](https://user-images.githubusercontent.com/23710841/37383882-f8820840-2721-11e8-94ff-0ec28a9b3948.png)
