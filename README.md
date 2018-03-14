@@ -68,7 +68,8 @@ This leads me to study the other variables: Total OT paid - Total Other Pay! Stu
 ### This is across all occupations for workers from 2000 to 2017, paid minimum of 20,000 annually
 ![spearmanr](https://user-images.githubusercontent.com/23710841/37383752-1c02ca3a-2721-11e8-97af-716ed12a7a60.png)
 - The score is moderate. This is a statistical measure of monotonic relationship between data. So it has to be either increasing or decreasing when plotted against each other (can't be both in the same plot like a sine curve). 
-- This tells us there is some slight correlation between Gross Pay and Years of Experience. **Let's graph it!**
+- A score closer to 1 shows perfect correlation. A score closer to 0 means there is absolutely no correlation.
+- .47 tells us there is some slight correlation between Gross Pay and Years of Experience. **Let's graph it!**
 ### We see an obvious upward trend! 
 ![yoe_gross_plot](https://user-images.githubusercontent.com/23710841/37426215-268724da-279c-11e8-9c96-fd495c4ba2a9.png)
 ### This differs greatly from what Base Salary showed. Which shows Gross Salary is the true indicator of Pay Vs. Experience!
