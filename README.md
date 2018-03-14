@@ -61,10 +61,10 @@ None of these plots look like they would go through the origin if they were stra
 This leads me to study the other variables: Total OT paid - Total Other Pay! Studying further we can see if this "other pay" is what is causing the skewness. However, doing a QQplot of base salary the same skewness still appears which shows me this is not due to the OT paid and Total other pay. Also, this just confirms the right skewness that is visible in the histograms above.
 ## Top 8 Average Paid Jobs?
 ![top8avgpaidjobs](https://user-images.githubusercontent.com/23710841/37267541-5f4bdd58-2597-11e8-90f9-a3fdf0f4056e.png)
-## In General, how does experience relate to base pay?
+## In General, how does experience relate to base pay & gross pay?
 #### Caveat, someone could be hired in each year with experience outside of NYC! This experience is not reflective of overall experience, but experience based on being a registered worker in NYC! For example, a random NYC worker who started working in 2006. In 2017, we could expect that persons salary to be somewhere around 50,000 to 80,000! However, there could be someone who comes in with more experience and could get paid $120,000, but will show up in the 2017 section of the plot, because he was never registered as a worker in NYC only until 2017. (I hope this explanation is clear. However there is a "slight trend", where on average, more experience = more pay!)
 ![boxplot_general](https://user-images.githubusercontent.com/23710841/37267124-b03edec0-2594-11e8-8b5c-6f3d70b77f9c.png)
-## However, no strong correlation detected.
+## However, no strong correlation detected. Let's see how this differs from gross pay!
 ### This is across all occupations for workers from 2000 to 2017, paid minimum of 20,000 annually
 ![spearmanr](https://user-images.githubusercontent.com/23710841/37383752-1c02ca3a-2721-11e8-97af-716ed12a7a60.png)
 - The score is moderate. This is a statistical measure of monotonic relationship between data. So it has to be either increasing or decreasing when plotted against each other (can't be both in the same plot like a sine curve). 
