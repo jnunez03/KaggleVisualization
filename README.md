@@ -75,6 +75,9 @@ This leads me to study the other variables: Total OT paid - Total Other Pay! Stu
 - (In reality, those dots way outside are outliers and don't need to be shown. There is a technique to calculate outliers beforehand and remove them from the plot)
 - You can also note which jobs have employees that are paid way above the normal pay and there are many jobs where all employees are paid within the IQR (Inter-Quartile Range) and display no outliers at all. 
 - You can also note there are employees that are paid below the 25th percentile, which could be due to lack of experience and/or a host of other reasons.
+## What Variable are related? Well besides the obvious, OT hours and OT paid are the only other most correlated variable (makes sense)!
+![heatmap](https://user-images.githubusercontent.com/23710841/37383882-f8820840-2721-11e8-94ff-0ec28a9b3948.png)
+
 __________________________________________________________________________________________________________________
 ## How I took a subset of the data...
 - My subset: Employees paid annually, data registered in 2017, with starting work dates from 2000 to 2017 (~18 years of experience to ~1 year of experience). 
