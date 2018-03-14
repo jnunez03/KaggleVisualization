@@ -68,6 +68,8 @@ This leads me to study the other variables: Total OT paid - Total Other Pay! Stu
 ### This is across all occupations for workers from 2000 to 2017, paid minimum of 20,000 annually
 ![spearmanr](https://user-images.githubusercontent.com/23710841/37383752-1c02ca3a-2721-11e8-97af-716ed12a7a60.png)
 - The score is moderate. This is a statistical measure of monotonic relationship between data. So it has to be either increasing or decreasing when plotted against each other (can't be both in the same plot like a sine curve). 
+- This tells us there is some slight correlation between Gross Pay and Years of Experience. **Let's graph it!**
+
 ## I chose to look at the "jobs with the most employees"(most common jobs) and find the distribution of gross pay! 
 ![alljobs3 0](https://user-images.githubusercontent.com/23710841/37370693-5f26cc82-26e3-11e8-8569-6bf4ad25a059.png)
 - note: clicking on the actual graph will make viewing it more clear!
