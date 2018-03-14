@@ -87,7 +87,7 @@ This leads me to study the other variables: Total OT paid - Total Other Pay! Stu
 - You can also note which jobs have employees that are paid way above the normal pay and there are many jobs where all employees are paid within the IQR (Inter-Quartile Range) and display no outliers at all. 
 - You can also note there are employees that are paid below the 25th percentile, which could be due to lack of experience and/or a host of other reasons.
 
-## What Variable are related? Well besides the obvious, OT hours and OT paid are the only other most correlated variable (makes sense)!
+## What Variables are related? Well besides the obvious, OT hours and OT paid are the only other most correlated variable (makes sense)!
 ### This is across all occupations for workers from 2000 to 2017, paid minimum of 20,000 annually
 ![heatmap](https://user-images.githubusercontent.com/23710841/37383882-f8820840-2721-11e8-94ff-0ec28a9b3948.png)
 ## This is another way to view the heatmap. As you can see which variables are correlated by actual plots using seaborn.pairplot function!
