@@ -62,8 +62,10 @@ This leads me to study the other variables: Total OT paid - Total Other Pay! Stu
 ## Top 8 Average Paid Jobs?
 ![top8avgpaidjobs](https://user-images.githubusercontent.com/23710841/37267541-5f4bdd58-2597-11e8-90f9-a3fdf0f4056e.png)
 ## In General, how does experience relate to base pay?
-#### Caveat, someone could be hired in each year with experience outside of NYC! This experience is not reflective of overall experience, but experience based on being a registered worker in NYC! For example, a random NYC worker who started working in 2006. In 2017, we could expect that persons salary to be somewhere around 50,000 to 80,000! However, there could be someone who comes in with more experience and could get paid $120,000, but will show up in the 2017 section of the plot, because he was never registered as a worker in NYC only until 2017. (I hope this explanation is clear. However there is a slight trend, where on average, more experience = more pay!)
+#### Caveat, someone could be hired in each year with experience outside of NYC! This experience is not reflective of overall experience, but experience based on being a registered worker in NYC! For example, a random NYC worker who started working in 2006. In 2017, we could expect that persons salary to be somewhere around 50,000 to 80,000! However, there could be someone who comes in with more experience and could get paid $120,000, but will show up in the 2017 section of the plot, because he was never registered as a worker in NYC only until 2017. (I hope this explanation is clear. However there is a "slight trend", where on average, more experience = more pay!)
 ![boxplot_general](https://user-images.githubusercontent.com/23710841/37267124-b03edec0-2594-11e8-8b5c-6f3d70b77f9c.png)
+## However, they are not very correlated! Rsquared of .47! Hey, we tried.
+![spearmanr](https://user-images.githubusercontent.com/23710841/37383752-1c02ca3a-2721-11e8-97af-716ed12a7a60.png)
 
 ## I chose to look at the "jobs with the most employees"(most common jobs) and find the distribution of gross pay! 
 ![alljobs3 0](https://user-images.githubusercontent.com/23710841/37370693-5f26cc82-26e3-11e8-8569-6bf4ad25a059.png)
