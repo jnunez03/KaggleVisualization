@@ -82,9 +82,9 @@ This leads me to study the other variables: Total OT paid - Total Other Pay! Stu
 ## This is another way to view the heatmap. As you can see which variables are correlated by actual plots using seaborn.pairplot function!
 ![pairplot](https://user-images.githubusercontent.com/23710841/37385031-72c8acfc-2728-11e8-9071-8c427590d962.png)
 __________________________________________________________________________________________________________________
-## How I took a subset of the data...
-- My subset: Employees paid annually, data registered in 2017, with starting work dates from 2000 to 2017 (~18 years of experience to ~1 year of experience). 
-## Analyzing Teacher Data!
+# Next: Analyzing Teacher Data!
+- My subset: Teachers paid annually registered in 2017, with starting work dates from 2000 to 2017 (~18 years of experience to ~1 year of experience). 
+## Distribution
 Let's see how the pay is distributed based on years of experience!
 ![aabase](https://user-images.githubusercontent.com/23710841/37250325-10ca08dc-24c8-11e8-9252-5101c2b8d6d0.png)
 ![aagros](https://user-images.githubusercontent.com/23710841/37250326-10d56966-24c8-11e8-83f4-66d7fd7a05fd.png)
