@@ -152,7 +152,76 @@ plt.text(x=1.78, y=500000, s="Annual Paid Employees From Years 2000 to 2017", fo
 
 # ------ #  ------ # - ----- # ----- # ------ # ----- #
 
-              
+            # === # == # == # == # == # == # == # == # == #
+            
+# We are going to see relationship between years of experience and Gross Pay!
+
+# Create new column yearsOfExp
+newdata = df[(df["Pay Basis"] == "per Annum") &  (df["Fiscal Year"] == 2017)  & (df["Start_Year"] >= 2000) & (df["Start_Year"] <= 2017) & (df["Regular Gross Paid"] > 20000)]
+
+len(newdata)
+newdata.head()
+# newData. Has data from years 2000 to 2017, registered in 2017.
+newdata['yearsOfexp'] = np.nan
+newdata.info()
+newdata.head()
+
+# function to create new column with years of experience!
+def year_approx(cols):
+    yearsOfexp = cols[0]
+    Start_Year =cols[1]
+    
+    if pd.isnull(yearsOfexp):
+        if Start_Year == 2000:
+            return 18
+        elif Start_Year==2001:
+            return 17
+        elif Start_Year==2002:
+            return 16
+        elif Start_Year==2003:
+            return 15
+        elif Start_Year==2004:
+            return 14
+        elif Start_Year==2005:
+            return 13
+        elif Start_Year==2006:
+            return 12
+        elif Start_Year==2007:
+            return 11
+        elif Start_Year==2008:
+            return 10
+        elif Start_Year==2009:
+            return 9
+        elif Start_Year==2010:
+            return 8
+        elif Start_Year==2011:
+            return 7
+        elif Start_Year==2012:
+            return 6
+        elif Start_Year==2013:
+            return 5
+        elif Start_Year==2014:
+            return 4
+        elif Start_Year==2015:
+            return 3
+        elif Start_Year==2016:
+            return 2
+        elif Start_Year==2017:
+            return 1
+    else:
+        return np.nan
+
+newdata['yearsOfexp'] = newdata[['yearsOfexp', 'Start_Year']].apply(year_approx, axis=1)
+
+newdata['yearsOfexp'].corr(newdata['Regular Gross Paid']) # check correlation
+newdata['yearsOfexp'].corr(newdata['Base Salary']) # check correlation
+from scipy.stats import spearmanr
+sb.jointplot("yearsOfexp", "Regular Gross Paid", data=newdata,stat_func=spearmanr,color="m")
+rcParams['figure.figsize'] = 12,8
+sb.heatmap(newdata.corr()) # heatmap plot
+
+
+#  - #   -  # - # - # - #
 # Most Pay Based On Work Title   - -  - -  -  - -  - -                
 x = df[(df["Pay Basis"] == "per Annum") & (df["Regular Gross Paid"] > 10000) & (df["Base Salary"] > 10000)]
 
