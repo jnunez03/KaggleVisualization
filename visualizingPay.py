@@ -218,10 +218,52 @@ newdata['yearsOfexp'].corr(newdata['Base Salary']) # check correlation
 from scipy.stats import spearmanr
 sb.jointplot("yearsOfexp", "Regular Gross Paid", data=newdata,stat_func=spearmanr,color="m")
 rcParams['figure.figsize'] = 12,8
+
 sb.heatmap(newdata.corr()) # heatmap plot
 
 # Pairplot!
 sb.pairplot(newdata)
+
+#    -   -  PLOT:   Gross PAY vs. YEAR OF EXP
+#plt.figure.gca().xaxis.set_major_locator(MaxNLocator(integer=True))
+newdata.groupby(['yearsOfexp'])['Regular Gross Paid'].median().plot(color='teal')
+newdata.groupby(['yearsOfexp'])['Regular Gross Paid'].mean().plot(color='orangered')
+plt.axhline(y = 20000, color = 'black', linewidth = 1.3, alpha = .7)
+plt.yticks(range(20000,100000,10000), weight='bold',color='black')
+plt.xticks(range(1,19,3),fontsize=10, weight='bold',color='black')
+plt.ylabel('$ (USD)               ', fontsize=12, rotation=0, weight='bold')
+plt.xlabel('\n Years of Experience',fontsize=13.1, weight='bold')
+plt.text(x=0, y = 100000, s= 'Gross Salary based on Experience',fontsize = 27.5, weight = 'bold', alpha = .75)
+plt.text(x=0, y= 96000, s='Across All Occupations for employees on annual pay above $20,000',fontsize=13.2, alpha=.65)
+plt.text(x=13.1, y =87000, s='Median',color='teal',weight='bold',fontsize = 14,alpha = .85)
+plt.text(x=13.1, y= 72500, s='Mean',color='orangered',weight='bold',fontsize=14, alpha=.85)
+sb.despine()
+
+#  #  # --- ---  BOXPLOT:   YEAR OF EXP vs. Gross PAY!
+ax8=plt.axes()
+rcParams['figure.figsize'] = 25,17
+sb.boxplot(x=newdata["yearsOfexp"],
+           y=newdata[newdata["Regular Gross Paid"] < 200000]['Regular Gross Paid'], data=newdata, palette='hls',ax=ax8)
+plt.yticks(range(0,200000,15000),fontsize=18.0, weight='bold',color='black')
+plt.ylabel('$ (USD)                    ', fontsize=23, rotation=0, weight='bold')
+plt.xlabel('\n Years of Experience',fontsize=28, weight='bold')
+#plt.yticks(range(10000,200000,10000), fontsize=13, weight= 'bold')
+plt.xticks(fontsize=21, weight= 'bold')
+plt.axhline(y=1000, color = 'black', linewidth = 1.3, alpha = .7)
+ax8.set_title("Boxplot Distribution of Gross Salary (USD) based on Experience Across All Occupations",fontsize= 30, weight='bold')
+
+
+
+
+
+
+
+
+
+
+
+
+
 #  - #   -  # - # - # - #
 # Most Pay Based On Work Title   - -  - -  -  - -  - -                
 x = df[(df["Pay Basis"] == "per Annum") & (df["Regular Gross Paid"] > 10000) & (df["Base Salary"] > 10000)]
