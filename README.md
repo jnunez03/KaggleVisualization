@@ -6,6 +6,8 @@ The data isn't anything special, but it offers a lot of cleaning and discerning!
 - Note 1: I will try and reproduce this in blog format and/or jupyter notebook, so stay tuned for that! Also, explain code line by line.
 
 - Note 2: Clicking on graphs that may be hard to read will help make them more clear as it opens it in a new tab in most cases or just brings it in a kind of zoom and it becomes more clear.
+
+- Note 3: I use a lot of boxplots. Here is a refresher: [Interpreting Boxplots](https://en.wikipedia.org/wiki/Box_plot).
 ###### Code can be found in .py file above!!
 
 # Here is what I Found! 
