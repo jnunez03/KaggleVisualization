@@ -74,7 +74,16 @@ This leads me to study the other variables: Total OT paid - Total Other Pay! Stu
 ![yoe_gross_plot](https://user-images.githubusercontent.com/23710841/37426215-268724da-279c-11e8-9c96-fd495c4ba2a9.png)
 ### This differs greatly from what Base Salary showed. Which shows Gross Salary is the true indicator of Pay Vs. Experience!
 ![yoe_gross_newboxplot](https://user-images.githubusercontent.com/23710841/37427018-6e30184e-279e-11e8-91d8-1efed532eede.png)
-## Let's Analyze this Difference.
+## Let's Analyze this Difference
+![grossminusbase](https://user-images.githubusercontent.com/23710841/37444484-368f1102-27e8-11e8-8b91-b5d9c83c137d.png)
+- Mean: -2636.90 (Which means Base Salary was greater than Gross Salary on average)
+- Median: -1076.7
+- Standard Deviation: 11029
+- Minimum positive value: .11 (~11 cents...taxes must have been brutal!)
+-Caveat, I did this without taking care of outliers!
+### Our QQ plot below just shows that we have A LOT of extreme values! In statistics term: Fat-Tails! 
+![grossminusbaseqqplot](https://user-images.githubusercontent.com/23710841/37444648-1a6c3a6c-27e9-11e8-9345-e2399df64384.png)
+
 
 ### Conclusion! 
 - When we looked above at Base Salary, we did not see a strong correlation between Base Salary and Years of Experience! The Boxplot only revealed a slight upward trend. When we took a look at Gross Salary, we saw a stronger trend (stronger correlation) which was denoted by the spearman rank test that had a value of .47 which is a moderate score. Across All Occupations, it is revealed the more experience you have the more money you will end up making, despite what your base salary value is! We know that there are other forms of payment such as bonuses, OT paid, stocks, bonds, etc. 
