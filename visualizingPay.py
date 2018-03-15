@@ -252,15 +252,40 @@ plt.xticks(fontsize=21, weight= 'bold')
 plt.axhline(y=1000, color = 'black', linewidth = 1.3, alpha = .7)
 ax8.set_title("Boxplot Distribution of Gross Salary (USD) based on Experience Across All Occupations",fontsize= 30, weight='bold')
 
+## PLOT: Gross Pay - Base Pay
+
+newdata["GrossMinusBase"] = newdata["Regular Gross Paid"].subtract(newdata["Base Salary"], fill_value=0)
+
+newdata["GrossMinusBase"].plot()
+len(newdata["Regular Gross Paid"])
+len(newdata["Base Salary"])
+len(newdata["GrossMinusBase"])
+newdata["GrossMinusBase"].count()
+
+newdata["GrossMinusBase"].mean()
+newdata["GrossMinusBase"].median()
+newdata["GrossMinusBase"].std()
+newdata["GrossMinusBase"].max()
+newdata["GrossMinusBase"].min()
+
+newdata[newdata["GrossMinusBase"] > 0]["GrossMinusBase"].min()
+
+from pandas.tools.plotting import scatter_matrix
+
+scatter_matrix(newdata, alpha=.2, figsize=(8,8), diagonal='kde')
+scatter_matrix(df, alpha=.2, figsize=(8,8), diagonal='kde')
+
+newdata["GrossMinusBase"].hist(alpha=.4,bins='auto')
+plt.hist(newdata["GrossMinusBase"],bins='auto')
+
+g=plt.figure()
+g = sb.distplot(newdata["GrossMinusBase"],kde=False)
+g.set_xlim([-80000,50000])
+
+sm.qqplot(newdata["GrossMinusBase"], line='q')
 
 
-
-
-
-
-
-
-
+# --- # --- # --- # --- #
 
 
 
