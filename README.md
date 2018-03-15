@@ -74,7 +74,7 @@ This leads me to study the other variables: Total OT paid - Total Other Pay! Stu
 ![yoe_gross_plot](https://user-images.githubusercontent.com/23710841/37426215-268724da-279c-11e8-9c96-fd495c4ba2a9.png)
 ### This differs greatly from what Base Salary showed. Which shows Gross Salary is the true indicator of Pay Vs. Experience!
 ![yoe_gross_newboxplot](https://user-images.githubusercontent.com/23710841/37427018-6e30184e-279e-11e8-91d8-1efed532eede.png)
-## Let's Analyze this Difference
+## Let's Analyze this Difference:   Gross Pay - Base Pay
 ![grossminusbase](https://user-images.githubusercontent.com/23710841/37444484-368f1102-27e8-11e8-8b91-b5d9c83c137d.png)
 - Mean: -2636.90 (Which means Base Salary was greater than Gross Salary on average)
 - Median: -1076.7
