@@ -141,7 +141,80 @@ Strike.boxplot(column='plate_loc_z',by='pitch_call')
 Ball.boxplot(column='rel_speed',by='pitch_call')
 Strike.boxplot(column='rel_speed',by='pitch_call')
 
+# _ # _ # _ # _ # _ # _ # _ # _ # _ # _ # _ # _ # _ # _ # _ # _ # _ # _ # _ # _ # _ # _ #
+Ball = df[(df["pitch_call"] == "BallCalled")]
+Strike = df[(df["pitch_call"] == "StrikeCalled")]
+StrikeSwingin = df[(df["pitch_call"] == "StrikeSwinging")]
 
+# BOXPLOTS BASED ON SUBSETS!
+Ball.boxplot(column='plate_loc_z',by='pitch_call')
+Strike.boxplot(column='plate_loc_z',by='pitch_call')
+StrikeSwingin.boxplot(column='plate_loc_z',by='pitch_call')
+
+
+# BOX PLOT FOR LHH - RHH  # METS AND YANKES
+fig77, ax77 = plt.subplots()
+sb.boxplot(x="pitch_call", y="plate_loc_z", hue="batside", data=df, palette="PRGn",ax=ax77)
+sb.despine(offset=10, trim=True)
+fig77.suptitle('Pitch Height vs Pitch Call for Both Teams',weight='bold')
+plt.title(s="Blue Lines Indicate the Average Top-Bottom of All Batters' Box.",
+         horizontalalignment='left',
+         weight='light', fontsize=9, color='#555555')
+ax77.xaxis.label.set_visible(False)
+#ax77.yaxis.label.set_visible(False)
+ax77.set_ylabel('Height of Pitch')
+ax77.set_xlabel('')
+ax77.axhline(y=df["sz_bot"].mean(),linewidth=2.4)
+ax77.axhline(y=df["sz_top"].mean(),linewidth=2.4)
+
+# BOX PLOT FOR LHH - RHH  # METS 
+yankspitches = df[df["catcher"] == "Sanchez, Gary"]
+fig, ax6 = plt.subplots()
+sb.boxplot(x="pitch_call", y="plate_loc_z", hue="batside", data=yankspitches, palette="PRGn",ax=ax6)
+fig.suptitle('Pitch Height vs Pitch Call for the Mets', weight='bold')
+ax6.xaxis.label.set_visible(False)
+#ax6.yaxis.label.set_visible(False)
+ax6.set_ylabel('Height of Pitch')
+ax6.set_xlabel('')
+plt.title(s="Blue Lines Indicate the Average Top-Bottom of Mets Batters' Box.",
+         horizontalalignment='left',
+         weight='light', fontsize=9, color='#555555')
+ax6.axhline(y=yankspitches["sz_bot"].mean(),linewidth=2.4)
+ax6.axhline(y=yankspitches["sz_top"].mean(),linewidth=2.4)
+
+#fig122.suptitle("Strikes based on pitch height location",fontweight='bold', fontsize=22)
+
+# BOX PLOTS FOR THE METS !!!! 
+#Strikes Called
+rcParams['figure.figsize'] = 9,6
+yankspitches0 = df[(df["catcher"] == "Sanchez, Gary") & (df["pitch_call"] == "StrikeCalled")]
+fig9,ax9 = plt.subplots()
+yankspitches0.boxplot(column='plate_loc_z',by='pitch_call', ax=ax9)
+ax9.axhline(y=yankspitches0["sz_bot"].mean())
+ax9.axhline(y=yankspitches0["sz_top"].mean())
+ax9.text(x=1.05, y=(yankspitches0["sz_bot"].mean() + .03), s='avg bottom of batters box for the Mets')
+ax9.text(x=1.05, y=(yankspitches0["sz_top"].mean() + .03), s='avg top of batters box for the Mets')
+ax9.xaxis.label.set_visible(False)
+fig9.suptitle("Honest Batters Box for Mets",fontweight='bold', fontsize=22)
+ax9.set_title('')
+""" DONE """
+
+# Strike Swinging
+yankspitches1 = df[(df["catcher"] == "Sanchez, Gary") & (df["pitch_call"] == "StrikeSwinging")]
+fig10,ax10 = plt.subplots()
+yankspitches1.boxplot(column='plate_loc_z',by='pitch_call', ax=ax10)
+ax10.axhline(y=yankspitches1["sz_bot"].mean())
+ax10.axhline(y=yankspitches1["sz_top"].mean())
+ax10.text(x=1.05, y=(yankspitches1["sz_bot"].mean() + .03), s='avg bottom of batters box for the Mets')
+ax10.text(x=1.05, y=(yankspitches1["sz_top"].mean() + .03), s='avg top of batters box for the Mets')
+ax10.xaxis.label.set_visible(False)
+fig10.suptitle("Tough to Lay Off the Low Ones",fontweight='bold', fontsize=22)
+ax10.set_title('')
+""" DONE """
+
+
+
+# _ # _ # _ # _ # _ # _ # _ # _ # _ # _ # _ # _ # _ # _ # _ # _ # _ # _ # _ # _ # _ # _ #
 """ TAKE ABOVE PLOTS FROM COMPUTER AT WORK """ 
 
 
