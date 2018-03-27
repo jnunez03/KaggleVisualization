@@ -37,10 +37,10 @@ easily seeing them side by side and the bold color helps notice the bars and you
 
 ![gross](https://user-images.githubusercontent.com/23710841/37167223-50d24a2a-22cf-11e8-8d75-079632a36385.png)
 
-## Yearly?
+## These are the distributions yearly.
 ![Data](https://user-images.githubusercontent.com/23710841/37130175-4d5b605e-2250-11e8-9160-28f1977473f9.png)
 
-## With Kernal Densities you ask? (My computer didn't have the cpu power to  create a density for the 2017 graph)
+## With Kernal Densities.
 ![Data](https://user-images.githubusercontent.com/23710841/37130174-4d4a986e-2250-11e8-836f-fb260d5c8be2.png)
 
 ## Normal Distribution Added (*The normal line for 2017 is 3 graphs up. Again, had a problem processing pixel density.)
